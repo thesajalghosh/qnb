@@ -103,11 +103,11 @@ const Header = () => {
                                 <h4 className="font-semibold mb-2">SAP Solution or SAP Solution Services</h4>
                                 <ul className="space-y-1">
                                     <li><Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link></li>
-                                    <li><a href="#">SAP Consulting</a></li>
-                                    <li><a href="#">SAP Support</a></li>
-                                    <li><a href="#">SAP Upgradation</a></li>
-                                    <li><a href="#">SAP Business One Cloud</a></li>
-                                    <li><a href="#">SAP Business One HANA Solution</a></li>
+                                    <li><Link to={"/services/sap-consulting"}>SAP Consulting</Link></li>
+                                    <li><Link to={"/services/sap-support"}>SAP Support</Link></li>
+                                    <li><Link to={"/services/sap-upgradation"}>SAP Upgradation</Link></li>
+                                    <li><Link to={"/services/sap-business-one-cloud"}>SAP Business One Cloud</Link></li>
+                                    <li><Link to={"/services/sap-hana-solution"}>SAP Business One HANA Solution</Link></li>
                                 </ul>
                             </div>
                             <div>
