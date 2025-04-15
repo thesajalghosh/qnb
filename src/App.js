@@ -13,6 +13,19 @@ import SapHanaSolution from "./pages/SAPPages/SapHanaSolution";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import OracleDatabaseService from './pages/OraclePages/OracleDatabaseService';
+import DatabaseMigrationServices from './pages/OraclePages/DatabaseMigrationServices';
+import ManagedOracleDBAServices from './pages/OraclePages/ManagedOracleDBAServices';
+import LinuxServerSetup from './pages/OsServicePages/LinuxServerSetup';
+import SystemAdministrationMaintenance from './pages/OsServicePages/SystemAdministration&Maintenance';
+import PerformanceTuningOptimization from './pages/OsServicePages/PerformanceTuningOptimization';
+import MigrationPatchingUpgrade from './pages/OsServicePages/MigrationPatchingUpgrade';
+import AWSDeploymentManagement from './pages/AWSPages/AWSDeploymentManagement';
+import AWSSecurity from './pages/AWSPages/AWSSecurity';
+import AWSCostOptimization from './pages/AWSPages/AWSCostOptimization';
+import AWSManagedServices from './pages/AWSPages/AWSManagedServices';
+import AWSSupport from './pages/AWSPages/AWSSupport';
+import AWSMigration from './pages/AWSPages/AWSMigration';
 
 function App() {
   return (
@@ -33,6 +46,26 @@ function App() {
                     <Route path="/services/sap-upgradation" element={<SapUpgradation />} />
                     <Route path="/services/sap-business-one-cloud" element={<SapBusinessOneCloud />} />
                     <Route path="/services/sap-hana-solution" element={<SapHanaSolution />} />
+
+
+                    <Route path="/services/oracle-database-service" element={<OracleDatabaseService />} />
+                    <Route path="/services/database-migration-service" element={<DatabaseMigrationServices />} />
+                    <Route path="/services/manage-oracle-dba-service" element={<ManagedOracleDBAServices />} />
+
+
+                    <Route path="/services/linux-server-setup" element={<LinuxServerSetup />} />
+                    <Route path="/services/system-administration-maintenance" element={<SystemAdministrationMaintenance />} />
+                    <Route path="/services/performance-tuning-optimization" element={<PerformanceTuningOptimization />} />
+                    <Route path="/services/migration-patching-upgrade" element={<MigrationPatchingUpgrade />} />
+
+
+
+                    <Route path="/services/aws-deployment-management" element={<AWSDeploymentManagement />} />
+                    <Route path="/services/aws-security" element={<AWSSecurity />} />
+                    <Route path="/services/aws-cost-optimization" element={<AWSCostOptimization />} />
+                    <Route path="/services/aws-managed-services" element={<AWSManagedServices />} />
+                    <Route path="/services/aws-support" element={<AWSSupport />} />
+                    <Route path="/services/aws-migration" element={<AWSMigration />} />
                 </Routes>
                 <Footer />
             </div>
