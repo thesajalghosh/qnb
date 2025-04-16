@@ -15,7 +15,7 @@ const navigation = [
     {
         id: "1",
         title: "Services",
-        url: "/services",
+        url: "/",
     },
     {
         id: "2",
@@ -102,7 +102,7 @@ const Header = () => {
                             <div>
                                 <h4 className="font-semibold mb-2">SAP Solution or SAP Solution Services</h4>
                                 <ul className="space-y-1">
-                                    <li><a href="#">SAP Business One Implementation & Consulting</a></li>
+                                    <li><Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link></li>
                                     <li><a href="#">SAP Consulting</a></li>
                                     <li><a href="#">SAP Support</a></li>
                                     <li><a href="#">SAP Upgradation</a></li>
