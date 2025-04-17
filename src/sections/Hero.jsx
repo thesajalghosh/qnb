@@ -119,19 +119,19 @@ const Hero = () => {
                     <ul className="flex">
                         <li className="flex items-center justify-center flex-1 h-[8.5rem]">
                             {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            Demo Website
+                            SAP Website
                         </li>
                         <li className="flex items-center justify-center flex-1 h-[8.5rem]">
                             {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            Demo Website
+                            Oracle Website
                         </li>
                         <li className="flex items-center justify-center flex-1 h-[8.5rem]">
                             {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            Demo Website
+                            Linux Website
                         </li>
                         <li className="flex items-center justify-center flex-1 h-[8.5rem]">
                             {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            Demo Website
+                            AWS Website
                         </li>
                     </ul>
                 </div>
