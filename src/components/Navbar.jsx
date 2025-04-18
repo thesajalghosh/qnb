@@ -7,6 +7,8 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { useState } from "react";
 import { Menu, MenuButton, MenuItem, SubMenu } from "@szhsin/react-menu";
 import { RxDotFilled } from "react-icons/rx";
+import { IoMdArrowDropdown } from "react-icons/io";
+
 
 
 
@@ -99,7 +101,8 @@ const Header = () => {
                             </a>
                         ))} */}
                         <div className="cursor-pointer" onClick={() => navigate("/")}>{navigation[0].title}</div>
-                        <Menu menuButton={<MenuButton>{navigation[1].title}</MenuButton>} transition>
+                        <Menu menuButton={<MenuButton className="flex items-center gap-1">{navigation[1].title}<IoMdArrowDropdown className="text-white text-lg" />
+                        </MenuButton>} transition>
                            
                             <SubMenu label="SAP Solution Services">
                                 <MenuItem>
