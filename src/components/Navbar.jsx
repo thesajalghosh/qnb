@@ -6,6 +6,10 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { useState } from "react";
 import { Menu, MenuButton, MenuItem, SubMenu } from "@szhsin/react-menu";
+import { RxDotFilled } from "react-icons/rx";
+
+
+
 
 const navigation = [
     {
@@ -95,13 +99,31 @@ const Header = () => {
                         <div>{navigation[0].title}</div>
                         <Menu menuButton={<MenuButton>{navigation[1].title}</MenuButton>} transition>
                            
-                            <SubMenu label="SAP Solution or SAP Solution Services">
-                                <MenuItem><Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link></MenuItem>
-                                <MenuItem><Link to={"/services/sap-consulting"}>SAP Consulting</Link></MenuItem>
-                                <MenuItem><Link to={"/services/sap-support"}>SAP Support</Link></MenuItem>
-                                <MenuItem><Link to={"/services/sap-upgradation"}>SAP Upgradation</Link></MenuItem>
-                                <MenuItem><Link to={"/services/sap-business-one-cloud"}>SAP Business One Cloud</Link></MenuItem>
-                                <MenuItem><Link to={"/services/sap-hana-solution"}>SAP Business One HANA Solution</Link></MenuItem>
+                            <SubMenu label="SAP Solution Services">
+                                <MenuItem>
+                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
+                                    <Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
+                                    <Link to={"/services/sap-consulting"}>SAP Consulting</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
+                                    <Link to={"/services/sap-support"}>SAP Support</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
+                                    <Link to={"/services/sap-upgradation"}>SAP Upgradation</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
+                                    <Link to={"/services/sap-business-one-cloud"}>SAP Business One Cloud</Link>
+                                </MenuItem>
+                                <MenuItem>
+                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
+                                    <Link to={"/services/sap-hana-solution"}>SAP Business One HANA Solution</Link>
+                                </MenuItem>
                             </SubMenu>
                             <SubMenu label="Oracle Services">
                                 <MenuItem><Link to={"/services/oracle-database-service"}>Oracle Database Services</Link></MenuItem>
