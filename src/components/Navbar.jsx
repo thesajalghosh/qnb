@@ -96,29 +96,31 @@ const Header = () => {
                         <Menu menuButton={<MenuButton>{navigation[1].title}</MenuButton>} transition>
                            
                             <SubMenu label="SAP Solution or SAP Solution Services">
-                                <MenuItem>SAP Business One Implementation & Consulting</MenuItem>
-                                <MenuItem>Copy</MenuItem>
-                                <MenuItem>Paste</MenuItem>
-                                <MenuItem>Paste</MenuItem>
-                                
+                                <MenuItem><Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link></MenuItem>
+                                <MenuItem><Link to={"/services/sap-consulting"}>SAP Consulting</Link></MenuItem>
+                                <MenuItem><Link to={"/services/sap-support"}>SAP Support</Link></MenuItem>
+                                <MenuItem><Link to={"/services/sap-upgradation"}>SAP Upgradation</Link></MenuItem>
+                                <MenuItem><Link to={"/services/sap-business-one-cloud"}>SAP Business One Cloud</Link></MenuItem>
+                                <MenuItem><Link to={"/services/sap-hana-solution"}>SAP Business One HANA Solution</Link></MenuItem>
                             </SubMenu>
                             <SubMenu label="Oracle Services">
-                                <MenuItem>Cut</MenuItem>
-                                <MenuItem>Copy</MenuItem>
-                                <MenuItem>Paste</MenuItem>
-                                
+                                <MenuItem><Link to={"/services/oracle-database-service"}>Oracle Database Services</Link></MenuItem>
+                                <MenuItem><Link to={"/services/database-migration-service"}>Database Migration Services</Link></MenuItem>
+                                <MenuItem><Link to={"/services/manage-oracle-dba-service"}>Managed Oracle DBA Services</Link></MenuItem>                            
                             </SubMenu>
                             <SubMenu label="OS Services">
-                                <MenuItem>Cut</MenuItem>
-                                <MenuItem>Copy</MenuItem>
-                                <MenuItem>Paste</MenuItem>
-                               
+                                <MenuItem><Link to={"/services/linux-server-setup"}>Linux Server Setup & Configuration</Link></MenuItem>
+                                <MenuItem><Link to={"/services/system-administration-maintenance"}>System Administration & Maintenance</Link></MenuItem>
+                                <MenuItem><Link to={"/services/performance-tuning-optimization"}>Performance Tuning & Optimization</Link></MenuItem>
+                                <MenuItem><Link to={"/services/migration-patching-upgrade"}>Migration, Patching, Upgrade</Link></MenuItem>
                             </SubMenu>
                             <SubMenu label="AWS Cloud Services">
-                                <MenuItem>Cut</MenuItem>
-                                <MenuItem>Copy</MenuItem>
-                                <MenuItem>Paste</MenuItem>
-                              
+                                <MenuItem><Link to={"/services/aws-deployment-management"}>AWS Deployment & Management</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-security"}>AWS Security</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-cost-optimization"}>AWS Cost Optimization</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-managed-services"}>AWS Managed Services</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-support"}>AWS Support</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-migration"}>AWS Migration</Link></MenuItem>                              
                             </SubMenu>
                            
                         </Menu>
