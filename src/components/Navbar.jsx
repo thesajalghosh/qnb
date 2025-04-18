@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { background, quantum2 } from "../assets";
@@ -7,6 +7,7 @@ import MenuSvg from "../assets/svg/MenuSvg";
 import { useState } from "react";
 import { Menu, MenuButton, MenuItem, SubMenu } from "@szhsin/react-menu";
 import { RxDotFilled } from "react-icons/rx";
+
 
 
 
@@ -29,7 +30,7 @@ const navigation = [
     },
     {
         id: "3",
-        title: "About us",
+        title: "About Us",
         url: "/about-us",
     },
     {
@@ -55,6 +56,7 @@ const Header = () => {
     const pathname = useLocation();
     const [openNavigation, setOpenNavigation] = useState(false);
     const [hovered, setHovered] = useState(false);
+    const navigate = useNavigate()
 
     const toggleNavigation = () => {
         if (openNavigation) {
@@ -96,7 +98,7 @@ const Header = () => {
                                 {item.title}
                             </a>
                         ))} */}
-                        <div>{navigation[0].title}</div>
+                        <div className="cursor-pointer" onClick={() => navigate("/")}>{navigation[0].title}</div>
                         <Menu menuButton={<MenuButton>{navigation[1].title}</MenuButton>} transition>
                            
                             <SubMenu label="SAP Solution Services">
@@ -146,9 +148,9 @@ const Header = () => {
                             </SubMenu>
                            
                         </Menu>
-                        <div>{navigation[2].title}</div>
-                        <div>{navigation[3].title}</div>
-                        <div>{navigation[4].title}</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/portfolio')}>{navigation[2].title}</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/about-us')}>{navigation[3].title}</div>
+                        <div className="cursor-pointer" onClick={() => navigate('/career')}>{navigation[4].title}</div>
 
 
                     </div>

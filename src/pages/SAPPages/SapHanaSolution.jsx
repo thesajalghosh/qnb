@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import Section from '../../components/Section';
 import Button from '../../components/Button';
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 const SapHanaSolution = () => {
     const parallaxRef = useRef(null);
@@ -23,21 +25,21 @@ const SapHanaSolution = () => {
                      Business One HANA and drive agility, innovation, and growth in your business!
                 </p>
                 <h2 className='text-2xl mt-5'>SAP HANA Solution Features</h2>
-                <ul className='pl-4'>
-                    <li>1. High-Speed Performance – Leverage in-memory computing for faster data processing and real-time insights.
+                <ul className='pl-4 flex flex-col gap-3 empty-2'>
+                    <li className='flex gap-2'><FaArrowRightLong size={16} /> High-Speed Performance – Leverage in-memory computing for faster data processing and real-time insights.
                          </li>
-                    <li>2. Advanced Analytics & Reporting – Access interactive dashboards, real-time analytics, and predictive forecasting for data-driven decision-making.
+                    <li className='flex gap-2'><FaArrowRightLong size={16} /> Advanced Analytics & Reporting – Access interactive dashboards, real-time analytics, and predictive forecasting for data-driven decision-making.
                          </li>
-                    <li>3. Enhanced Search Capabilities – Perform instant searches across large datasets with SAP HANA’s powerful enterprise search functionality.
+                    <li className='flex gap-2'><FaArrowRightLong size={16} />Enhanced Search Capabilities – Perform instant searches across large datasets with SAP HANA’s powerful enterprise search functionality.
                          </li>
-                    <li>4. Streamlined Business Processes – Optimize workflows with faster transaction processing and improved operational efficiency.
+                    <li className='flex gap-2'><FaArrowRightLong size={16} /> Streamlined Business Processes – Optimize workflows with faster transaction processing and improved operational efficiency.
                          </li>
-                    <li>5. Scalability & Flexibility – Handle growing business needs effortlessly with a 
+                    <li className='flex gap-2'><FaArrowRightLong size={16} /> Scalability & Flexibility – Handle growing business needs effortlessly with a 
                         scalable and future-ready ERP platform.
                          </li>
-                    <li>5. Robust Security & Reliability – Ensure data integrity and security with SAP HANA’s advanced encryption and backup solutions.
+                    <li className='flex gap-2'><FaArrowRightLong size={16} /> Robust Security & Reliability – Ensure data integrity and security with SAP HANA’s advanced encryption and backup solutions.
                          </li>
-                    <li>5. Seamless Integration – Integrate with third-party applications and SAP ecosystem for enhanced business connectivity.
+                    <li className='flex gap-2'><FaArrowRightLong size={16} /> Seamless Integration – Integrate with third-party applications and SAP ecosystem for enhanced business connectivity.
                          </li>
                 </ul>
 
@@ -48,19 +50,19 @@ const SapHanaSolution = () => {
                  One solutions that help businesses optimize operations, enhance efficiency, and drive growth.
                 </p>
                 <h2 className='text-2xl mt-5'>What Makes Quantumbrix Different?</h2>
-                <ul className='pl-4'>
-                    <li>1. Expertise & Experience – Our team of experienced SAP consultants has extensive industry knowledge
+                <ul className='pl-4 flex flex-col gap-3 empty-2'>
+                    <li className='flex gap-2'><FaArrowRightLong size={20} /> Expertise & Experience – Our team of experienced SAP consultants has extensive industry knowledge
                          and hands-on experience in implementing SAP Business One for businesses of all sizes.
                          </li>
-                    <li>2. Customized Solutions – We understand that every business is unique. Our solutions are designed to align with
+                    <li className='flex gap-2'><FaArrowRightLong size={20} />Customized Solutions – We understand that every business is unique. Our solutions are designed to align with
                          your specific needs, ensuring maximum efficiency and scalability.
                          </li>
-                    <li>3. Seamless Implementation & Support – From deployment to training and ongoing support, we provide a hassle-free
+                    <li className='flex gap-2'><FaArrowRightLong size={22} /> Seamless Implementation & Support – From deployment to training and ongoing support, we provide a hassle-free
                          experience with minimal downtime, so you can focus on growing your business.
                          </li>
-                    <li>4. Cost-Effective & Scalable – Our SAP solutions are designed to grow with
+                    <li className='flex gap-2'><FaArrowRightLong size={16} /> Cost-Effective & Scalable – Our SAP solutions are designed to grow with
                          your business, offering flexibility without breaking the bank.</li>
-                    <li>5. Innovation-Driven Approach – We leverage the latest technologies and best practices to help businesses
+                    <li className='flex gap-2'><FaArrowRightLong size={20} /> Innovation-Driven Approach – We leverage the latest technologies and best practices to help businesses
                          stay ahead of the competition with real-time insights and automation.
                          </li>
                 </ul>

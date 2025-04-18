@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import Section from '../../components/Section';
 import Button from '../../components/Button';
+import { FaArrowRightLong } from "react-icons/fa6";
+ 
 
 const SapBusiness = () => {
     const parallaxRef = useRef(null);
@@ -21,18 +23,18 @@ const SapBusiness = () => {
                         key operations – from finance and sales to inventory and customer relations – all in a single, unified system.
                     </p>
                     <h2 className='text-2xl mt-5'>Why Choose SAP Business One?</h2>
-                    <ul className='pl-4'>
-                        <li>1. End-to-End Business Management: 
+                    <ul className='pl-4 flex flex-col gap-3 empty-2'>
+                        <li className='flex gap-2'><FaArrowRightLong size={16} /> End-to-End Business Management: 
                             Gain complete control over your business with a
                              centralized system that connects all core functions.
                              </li>
-                        <li>2. Real-Time Insights: Make data-driven decisions with powerful analytics and reporting capabilities.
+                        <li className='flex gap-2'><FaArrowRightLong size={16} /> Real-Time Insights: Make data-driven decisions with powerful analytics and reporting capabilities.
                              </li>
-                        <li>3. Scalability: Grow your business without limitations – SAP Business One adapts to your evolving needs.
+                        <li className='flex gap-2'><FaArrowRightLong size={16} /> Scalability: Grow your business without limitations – SAP Business One adapts to your evolving needs.
                              </li>
-                        <li>4. Industry-Specific Solutions: Tailored functionalities for manufacturing, retail, wholesale, and more.
+                        <li className='flex gap-2'><FaArrowRightLong size={16} /> Industry-Specific Solutions: Tailored functionalities for manufacturing, retail, wholesale, and more.
                              </li>
-                        <li>5. Cloud & On-Premise Deployment: Flexible hosting options to suit your business strategy.
+                        <li className='flex gap-2'><FaArrowRightLong size={16} /> Cloud & On-Premise Deployment: Flexible hosting options to suit your business strategy.
                              </li>
                     </ul>
 
@@ -43,19 +45,19 @@ const SapBusiness = () => {
                      One solutions that help businesses optimize operations, enhance efficiency, and drive growth.
                     </p>
                     <h2 className='text-2xl mt-5'>What Makes Quantumbrix Different?</h2>
-                    <ul className='pl-4'>
-                        <li>1. Expertise & Experience – Our team of experienced SAP consultants has extensive industry knowledge
+                    <ul className='pl-4 flex flex-col gap-3 empty-2'>
+                        <li className='flex gap-2'><FaArrowRightLong size={20} /> Expertise & Experience – Our team of experienced SAP consultants has extensive industry knowledge
                              and hands-on experience in implementing SAP Business One for businesses of all sizes.
                              </li>
-                        <li>2. Customized Solutions – We understand that every business is unique. Our solutions are designed to align with
+                        <li className='flex gap-2'><FaArrowRightLong size={20} /> Customized Solutions – We understand that every business is unique. Our solutions are designed to align with
                              your specific needs, ensuring maximum efficiency and scalability.
                              </li>
-                        <li>3. Seamless Implementation & Support – From deployment to training and ongoing support, we provide a hassle-free
+                        <li className='flex gap-2'><FaArrowRightLong size={22} /> Seamless Implementation & Support – From deployment to training and ongoing support, we provide a hassle-free
                              experience with minimal downtime, so you can focus on growing your business.
                              </li>
-                        <li>4. Cost-Effective & Scalable – Our SAP solutions are designed to grow with
+                        <li className='flex gap-2'><FaArrowRightLong size={18} /> Cost-Effective & Scalable – Our SAP solutions are designed to grow with
                              your business, offering flexibility without breaking the bank.</li>
-                        <li>5. Innovation-Driven Approach – We leverage the latest technologies and best practices to help businesses
+                        <li className='flex gap-2'><FaArrowRightLong size={20} /> Innovation-Driven Approach – We leverage the latest technologies and best practices to help businesses
                              stay ahead of the competition with real-time insights and automation.
                              </li>
                     </ul>

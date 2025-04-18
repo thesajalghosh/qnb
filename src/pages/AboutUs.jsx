@@ -8,7 +8,8 @@ const AboutUs = () => {
     <div className="container relative" ref={parallaxRef}>
 
 
-      service
+    <marquee className="text-4xl">Coming Soon...</marquee>
+
     </div>
   </Section>
   )
