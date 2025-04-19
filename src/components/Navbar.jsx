@@ -131,9 +131,13 @@ const Header = () => {
                                 </MenuItem>
                             </SubMenu>
                             <SubMenu label="Oracle Services">
-                                <MenuItem><Link to={"/services/oracle-database-service"}>Oracle Database Services</Link></MenuItem>
-                                <MenuItem><Link to={"/services/database-migration-service"}>Database Migration Services</Link></MenuItem>
-                                <MenuItem><Link to={"/services/manage-oracle-dba-service"}>Managed Oracle DBA Services</Link></MenuItem>                            
+                                <MenuItem><Link to={"/services/oracle-service"}>Installation & Configuration</Link></MenuItem>
+                                <MenuItem><Link to={"/services/oracle-service"}>Database Upgrades & Migrations</Link></MenuItem>
+                                <MenuItem><Link to={"/services/oracle-service"}>Performance Tuning</Link></MenuItem>
+                                <MenuItem><Link to={"/services/oracle-service"}>Backup & Recovery Solutions</Link></MenuItem>
+                                <MenuItem><Link to={"/services/oracle-service"}>High Availability & Disaster Recovery</Link></MenuItem>
+                                <MenuItem><Link to={"/services/oracle-service"}>Security & Compliance</Link></MenuItem>
+                                <MenuItem><Link to={"/services/oracle-service"}>Managed Services</Link></MenuItem>
                             </SubMenu>
                             <SubMenu label="OS Services">
                                 <MenuItem><Link to={"/services/os-service"}>Installation & Configuration</Link></MenuItem>

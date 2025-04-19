@@ -13,9 +13,6 @@ import SapHanaSolution from "./pages/SAPPages/SapHanaSolution";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import OracleDatabaseService from './pages/OraclePages/OracleDatabaseService';
-import DatabaseMigrationServices from './pages/OraclePages/DatabaseMigrationServices';
-import ManagedOracleDBAServices from './pages/OraclePages/ManagedOracleDBAServices';
 import AWSDeploymentManagement from './pages/AWSPages/AWSDeploymentManagement';
 import AWSSecurity from './pages/AWSPages/AWSSecurity';
 import AWSCostOptimization from './pages/AWSPages/AWSCostOptimization';
@@ -25,6 +22,7 @@ import AWSMigration from './pages/AWSPages/AWSMigration';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/zoom.css';
 import OsService from './pages/OsServicePages/OsService';
+import OracleServices from './pages/OraclePages/OracleService';
 
 function App() {
   return (
@@ -47,10 +45,7 @@ function App() {
                     <Route path="/services/sap-hana-solution" element={<SapHanaSolution />} />
 
 
-                    <Route path="/services/oracle-database-service" element={<OracleDatabaseService />} />
-                    <Route path="/services/database-migration-service" element={<DatabaseMigrationServices />} />
-                    <Route path="/services/manage-oracle-dba-service" element={<ManagedOracleDBAServices />} />
-
+                    <Route path="/services/oracle-service" element={<OracleServices />} />
 
                     <Route path="/services/os-service" element={<OsService />} />
 
