@@ -1,6 +1,6 @@
 // Hero Section
 export { default as curve } from './hero/curve.png';
-export { default as robot } from './hero/sapimage.jpg';
+export { default as robot } from './hero/robot.png';
 export { default as heroBackground } from './hero/hero-background.jpg';
 
 // Collaboration Section
