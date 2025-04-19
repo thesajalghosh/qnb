@@ -106,27 +106,21 @@ const Header = () => {
                            
                             <SubMenu label="SAP Solution Services">
                                 <MenuItem>
-                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
                                     <Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
                                     <Link to={"/services/sap-consulting"}>SAP Consulting</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
                                     <Link to={"/services/sap-support"}>SAP Support</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
                                     <Link to={"/services/sap-upgradation"}>SAP Upgradation</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
                                     <Link to={"/services/sap-business-one-cloud"}>SAP Business One Cloud</Link>
                                 </MenuItem>
                                 <MenuItem>
-                                    <RxDotFilled style={{ color: "black", marginRight: "8px", fontSize: "1.2rem" }} />
                                     <Link to={"/services/sap-hana-solution"}>SAP Business One HANA Solution</Link>
                                 </MenuItem>
                             </SubMenu>
