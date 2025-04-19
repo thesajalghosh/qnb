@@ -96,44 +96,29 @@ const Header = () => {
                         <Menu menuButton={<MenuButton>{navigation[1].title}</MenuButton>} transition>
                            
                             <SubMenu label="SAP Solution or SAP Solution Services">
-                                <MenuItem>Cut</MenuItem>
+                                <MenuItem>SAP Business One Implementation & Consulting</MenuItem>
                                 <MenuItem>Copy</MenuItem>
                                 <MenuItem>Paste</MenuItem>
-                                <SubMenu label="Find">
-                                    <MenuItem>Find...</MenuItem>
-                                    <MenuItem>Find Next</MenuItem>
-                                    <MenuItem>Find Previous</MenuItem>
-                                </SubMenu>
+                                <MenuItem>Paste</MenuItem>
+                                
                             </SubMenu>
                             <SubMenu label="Oracle Services">
                                 <MenuItem>Cut</MenuItem>
                                 <MenuItem>Copy</MenuItem>
                                 <MenuItem>Paste</MenuItem>
-                                <SubMenu label="Find">
-                                    <MenuItem>Find...</MenuItem>
-                                    <MenuItem>Find Next</MenuItem>
-                                    <MenuItem>Find Previous</MenuItem>
-                                </SubMenu>
+                                
                             </SubMenu>
                             <SubMenu label="OS Services">
                                 <MenuItem>Cut</MenuItem>
                                 <MenuItem>Copy</MenuItem>
                                 <MenuItem>Paste</MenuItem>
-                                <SubMenu label="Find">
-                                    <MenuItem>Find...</MenuItem>
-                                    <MenuItem>Find Next</MenuItem>
-                                    <MenuItem>Find Previous</MenuItem>
-                                </SubMenu>
+                               
                             </SubMenu>
                             <SubMenu label="AWS Cloud Services">
                                 <MenuItem>Cut</MenuItem>
                                 <MenuItem>Copy</MenuItem>
                                 <MenuItem>Paste</MenuItem>
-                                <SubMenu label="Find">
-                                    <MenuItem>Find...</MenuItem>
-                                    <MenuItem>Find Next</MenuItem>
-                                    <MenuItem>Find Previous</MenuItem>
-                                </SubMenu>
+                              
                             </SubMenu>
                            
                         </Menu>
