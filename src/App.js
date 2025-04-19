@@ -16,10 +16,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OracleDatabaseService from './pages/OraclePages/OracleDatabaseService';
 import DatabaseMigrationServices from './pages/OraclePages/DatabaseMigrationServices';
 import ManagedOracleDBAServices from './pages/OraclePages/ManagedOracleDBAServices';
-import LinuxServerSetup from './pages/OsServicePages/LinuxServerSetup';
-import SystemAdministrationMaintenance from './pages/OsServicePages/SystemAdministration&Maintenance';
-import PerformanceTuningOptimization from './pages/OsServicePages/PerformanceTuningOptimization';
-import MigrationPatchingUpgrade from './pages/OsServicePages/MigrationPatchingUpgrade';
 import AWSDeploymentManagement from './pages/AWSPages/AWSDeploymentManagement';
 import AWSSecurity from './pages/AWSPages/AWSSecurity';
 import AWSCostOptimization from './pages/AWSPages/AWSCostOptimization';
@@ -28,6 +24,7 @@ import AWSSupport from './pages/AWSPages/AWSSupport';
 import AWSMigration from './pages/AWSPages/AWSMigration';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/zoom.css';
+import OsService from './pages/OsServicePages/OsService';
 
 function App() {
   return (
@@ -55,11 +52,7 @@ function App() {
                     <Route path="/services/manage-oracle-dba-service" element={<ManagedOracleDBAServices />} />
 
 
-                    <Route path="/services/linux-server-setup" element={<LinuxServerSetup />} />
-                    <Route path="/services/system-administration-maintenance" element={<SystemAdministrationMaintenance />} />
-                    <Route path="/services/performance-tuning-optimization" element={<PerformanceTuningOptimization />} />
-                    <Route path="/services/migration-patching-upgrade" element={<MigrationPatchingUpgrade />} />
-
+                    <Route path="/services/os-service" element={<OsService />} />
 
 
                     <Route path="/services/aws-deployment-management" element={<AWSDeploymentManagement />} />

@@ -136,10 +136,14 @@ const Header = () => {
                                 <MenuItem><Link to={"/services/manage-oracle-dba-service"}>Managed Oracle DBA Services</Link></MenuItem>                            
                             </SubMenu>
                             <SubMenu label="OS Services">
-                                <MenuItem><Link to={"/services/linux-server-setup"}>Linux Server Setup & Configuration</Link></MenuItem>
-                                <MenuItem><Link to={"/services/system-administration-maintenance"}>System Administration & Maintenance</Link></MenuItem>
-                                <MenuItem><Link to={"/services/performance-tuning-optimization"}>Performance Tuning & Optimization</Link></MenuItem>
-                                <MenuItem><Link to={"/services/migration-patching-upgrade"}>Migration, Patching, Upgrade</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>Installation & Configuration</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>System Hardening & Security</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>Patch Management & Updates</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>Performance Monitoring & Optimization</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>User & Permission Management</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>Backup & Recovery Planning</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>OS Migration & Upgrades</Link></MenuItem>
+                                <MenuItem><Link to={"/services/os-service"}>Remote & On-Site Support</Link></MenuItem>
                             </SubMenu>
                             <SubMenu label="AWS Cloud Services">
                                 <MenuItem><Link to={"/services/aws-deployment-management"}>AWS Deployment & Management</Link></MenuItem>
