@@ -5,6 +5,7 @@ import { background, quantum2 } from "../assets";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { useState } from "react";
+import { Menu, MenuButton, MenuItem, SubMenu } from "@szhsin/react-menu";
 
 const navigation = [
     {
@@ -76,8 +77,8 @@ const Header = () => {
                 </a>
 
                 <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
-                    <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
-                        {navigation.map((item) => (
+                    <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row gap-10 text-xl">
+                        {/* {navigation.map((item) => (
                             <a
                                 key={item.id}
                                 href={item.url}
@@ -90,10 +91,61 @@ const Header = () => {
                             >
                                 {item.title}
                             </a>
-                        ))}
+                        ))} */}
+                        <div>{navigation[0].title}</div>
+                        <Menu menuButton={<MenuButton>{navigation[1].title}</MenuButton>} transition>
+                           
+                            <SubMenu label="SAP Solution or SAP Solution Services">
+                                <MenuItem>Cut</MenuItem>
+                                <MenuItem>Copy</MenuItem>
+                                <MenuItem>Paste</MenuItem>
+                                <SubMenu label="Find">
+                                    <MenuItem>Find...</MenuItem>
+                                    <MenuItem>Find Next</MenuItem>
+                                    <MenuItem>Find Previous</MenuItem>
+                                </SubMenu>
+                            </SubMenu>
+                            <SubMenu label="Oracle Services">
+                                <MenuItem>Cut</MenuItem>
+                                <MenuItem>Copy</MenuItem>
+                                <MenuItem>Paste</MenuItem>
+                                <SubMenu label="Find">
+                                    <MenuItem>Find...</MenuItem>
+                                    <MenuItem>Find Next</MenuItem>
+                                    <MenuItem>Find Previous</MenuItem>
+                                </SubMenu>
+                            </SubMenu>
+                            <SubMenu label="OS Services">
+                                <MenuItem>Cut</MenuItem>
+                                <MenuItem>Copy</MenuItem>
+                                <MenuItem>Paste</MenuItem>
+                                <SubMenu label="Find">
+                                    <MenuItem>Find...</MenuItem>
+                                    <MenuItem>Find Next</MenuItem>
+                                    <MenuItem>Find Previous</MenuItem>
+                                </SubMenu>
+                            </SubMenu>
+                            <SubMenu label="AWS Cloud Services">
+                                <MenuItem>Cut</MenuItem>
+                                <MenuItem>Copy</MenuItem>
+                                <MenuItem>Paste</MenuItem>
+                                <SubMenu label="Find">
+                                    <MenuItem>Find...</MenuItem>
+                                    <MenuItem>Find Next</MenuItem>
+                                    <MenuItem>Find Previous</MenuItem>
+                                </SubMenu>
+                            </SubMenu>
+                           
+                        </Menu>
+                        <div>{navigation[2].title}</div>
+                        <div>{navigation[3].title}</div>
+                        <div>{navigation[4].title}</div>
+
+
                     </div>
 
-                    {hovered && (
+
+                    {/* {hovered && (
                         <div
                             className="absolute top-full left-0 w-full bg-white text-black shadow-lg hidden lg:grid grid-cols-5 gap-8 p-8 text-sm"
                             onMouseEnter={() => setHovered(true)}
@@ -141,7 +193,7 @@ const Header = () => {
                       
                     
                         </div>
-                    )}
+                    )} */}
 
                     <div className="absolute inset-0 pointer-events-none lg:hidden">
                         <div className="absolute inset-0 opacity-[.03]">

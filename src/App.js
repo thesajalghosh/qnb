@@ -26,6 +26,8 @@ import AWSCostOptimization from './pages/AWSPages/AWSCostOptimization';
 import AWSManagedServices from './pages/AWSPages/AWSManagedServices';
 import AWSSupport from './pages/AWSPages/AWSSupport';
 import AWSMigration from './pages/AWSPages/AWSMigration';
+import '@szhsin/react-menu/dist/index.css';
+import '@szhsin/react-menu/dist/transitions/zoom.css';
 
 function App() {
   return (
