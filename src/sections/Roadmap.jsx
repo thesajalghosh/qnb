@@ -56,14 +56,14 @@ const Roadmap = () => (
                                     <img className="w-full" src={grid} width={550} height={550} alt="" />
                                 </div>
                                 <div className="relative z-1">
-                                    <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
+                                    {/* <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
                                         <Tagline>{item.date}</Tagline>
 
                                         <div className="flex items-center px-4 py-1 bg-white rounded text-n-8">
                                             <img className="mr-2.5" src={item.status === "done" ? check2 : loading1} width={16} height={16} alt={status} />
                                             <div className="tagline">{status}</div>
                                         </div>
-                                    </div>
+                                    </div> */}
 
                                     <div className="mb-10 -my-10 -mx-15">
                                         <img className="w-full" src={item.imageUrl} width={628} height={426} alt={item.title} />
@@ -83,9 +83,9 @@ const Roadmap = () => (
                 </div>
             </div>
 
-            <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+            {/* <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
                 <Button href="#roadmap">Our roadmap</Button>
-            </div>
+            </div> */}
         </div>
     </Section>
 );
