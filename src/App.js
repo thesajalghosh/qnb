@@ -13,16 +13,11 @@ import SapHanaSolution from "./pages/SAPPages/SapHanaSolution";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import AWSDeploymentManagement from './pages/AWSPages/AWSDeploymentManagement';
-import AWSSecurity from './pages/AWSPages/AWSSecurity';
-import AWSCostOptimization from './pages/AWSPages/AWSCostOptimization';
-import AWSManagedServices from './pages/AWSPages/AWSManagedServices';
-import AWSSupport from './pages/AWSPages/AWSSupport';
-import AWSMigration from './pages/AWSPages/AWSMigration';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/zoom.css';
 import OsService from './pages/OsServicePages/OsService';
 import OracleServices from './pages/OraclePages/OracleService';
+import AWSService from './pages/AWSPages/AWSService';
 
 function App() {
   return (
@@ -50,12 +45,7 @@ function App() {
                     <Route path="/services/os-service" element={<OsService />} />
 
 
-                    <Route path="/services/aws-deployment-management" element={<AWSDeploymentManagement />} />
-                    <Route path="/services/aws-security" element={<AWSSecurity />} />
-                    <Route path="/services/aws-cost-optimization" element={<AWSCostOptimization />} />
-                    <Route path="/services/aws-managed-services" element={<AWSManagedServices />} />
-                    <Route path="/services/aws-support" element={<AWSSupport />} />
-                    <Route path="/services/aws-migration" element={<AWSMigration />} />
+                    <Route path="/services/aws-service" element={<AWSService />} />
                 </Routes>
                 <Footer />
             </div>

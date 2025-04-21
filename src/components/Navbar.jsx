@@ -144,14 +144,13 @@ const Header = () => {
                                 <MenuItem><Link to={"/services/os-service"}>Remote & On-Site Support</Link></MenuItem>
                             </SubMenu>
                             <SubMenu label="AWS Cloud Services">
-                                <MenuItem><Link to={"/services/aws-deployment-management"}>AWS Deployment & Management</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-security"}>AWS Security</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-cost-optimization"}>AWS Cost Optimization</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-managed-services"}>AWS Managed Services</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-support"}>AWS Support</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-migration"}>AWS Migration</Link></MenuItem>                              
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Deployment & Management</Link></MenuItem>                                                             
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Security</Link></MenuItem>                                                             
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Cost Optimization</Link></MenuItem>                                                             
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Managed Services</Link></MenuItem>                                                             
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Support</Link></MenuItem>                                                             
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Migration</Link></MenuItem>                                                             
                             </SubMenu>
-                           
                         </Menu>
                         <div className="cursor-pointer" onClick={() => navigate('/portfolio')}>{navigation[2].title}</div>
                         <div className="cursor-pointer" onClick={() => navigate('/about-us')}>{navigation[3].title}</div>
