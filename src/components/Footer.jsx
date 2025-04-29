@@ -43,8 +43,8 @@ const Footer = () => {
           {/* First Footer Element */}
           <div className="flex-1 lg:flex-[1.5]">
             <div className="flex items-center gap-4">
-              <img src={quantum2} className="h-16 w-16" alt="Logo" />
-              <img src={quantum2} className="h-20 w-48" alt="Company Name" />
+              <img src={quantum2} className="h-16 w-36" alt="Logo" />
+              {/* <img src={quantum2} className="h-20 w-48" alt="Company Name" /> */}
             </div>
             <div className="mt-5 pr-5">
               Crafting Timeless Brands with Creativity, Precision, and Purpose. We seamlessly merge two key components – economics and information technology.
@@ -88,9 +88,8 @@ const Footer = () => {
           <div className="flex-1">
             <div className="text-lg font-semibold">Contact Us</div>
             <div className="flex flex-col gap-4 mt-5">
-              <div>thequantumshifttechnologies@gmail.com</div>
-              <div>8918337826 / 9836445738</div>
-              <div>We operate everything remotely right now.</div>
+              <div>support@quantumbrix.com</div>
+              <div>89537XXXXX / 98324XXXXX</div>
             </div>
           </div>
   
@@ -118,7 +117,7 @@ const Footer = () => {
         {/* Extreme Footer */}
         <div className="border-t border-gray-600 px-5 lg:px-10 py-5 flex flex-col lg:flex-row justify-between items-center gap-5">
           <div className="text-sm text-center lg:text-left">
-            © 2024 Quantumshift Technologies. All Rights Reserved.
+            © 2025 Quantumbrix. All Rights Reserved.
           </div>
           <div className="flex items-center gap-4">
             <div
