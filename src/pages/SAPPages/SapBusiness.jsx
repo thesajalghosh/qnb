@@ -15,7 +15,7 @@ const SapBusiness = () => {
                 <div className='mt-5 pb-6'>
 
 
-                    <p className='text-center'>SAP Business One is a complete end to end business solution for the small and mid-sized enterprises (SMEs).
+                    <p className='text-start'>SAP Business One is a complete end to end business solution for the small and mid-sized enterprises (SMEs).
                         In today’s fast-paced business world, small and mid-sized enterprises (SMEs) need an efficient, scalable, and
                         affordable ERP solution to streamline operations and drive growth. SAP Business One is designed
                         to help businesses

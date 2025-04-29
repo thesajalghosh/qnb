@@ -15,7 +15,7 @@ const SapHanaSolution = () => {
             <div className='mt-5 pb-6'>
 
 
-                <p className='text-center'>SAP Business One HANA is an advanced, high-performance ERP
+                <p className='text-start'>SAP Business One HANA is an advanced, high-performance ERP
                      solution powered by SAP’s in-memory computing technology. It enables faster data
                       processing, real-time analytics, and smarter decision-making. With SAP HANA,
                        businesses can handle large volumes of data efficiently, gain instant insights,

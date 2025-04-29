@@ -47,7 +47,8 @@ const Footer = () => {
               {/* <img src={quantum2} className="h-20 w-48" alt="Company Name" /> */}
             </div>
             <div className="mt-5 pr-5">
-              Crafting Timeless Brands with Creativity, Precision, and Purpose. We seamlessly merge two key components – economics and information technology.
+                Delivers cloud and enterprise solutions across AWS, Oracle, OS, and SAP services.
+                We help businesses scale with secure, automated, and reliable infrastructure.
             </div>
             <div className="flex gap-6 mt-5">
               <div className="bg-gray-800 h-12 w-12 rounded-full flex items-center justify-center">

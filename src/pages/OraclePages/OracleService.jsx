@@ -9,7 +9,7 @@ const OsService = () => {
     <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings >
       <div className="container relative" ref={parallaxRef}>
         <h1 className='text-center text-4xl mb-4'>Oracle Services</h1>
-        <p className='text-center text-xl'>
+        <p className='text-start text-xl'>
           Unlock the full potential of your business data with our comprehensive Oracle Database Services.
           Whether you're looking to design a robust architecture, optimize performance, or ensure high
           availability, we provide tailored solutions to meet your unique requirements.
@@ -52,7 +52,7 @@ const OsService = () => {
                 growing your business.
               </p>
           </ul>
-          <p className='text-xl'>
+          <p className='text-xl mb-8'>
             At Quantumbrix, we combine deep Oracle expertise with a commitment to delivering value-driven,
             scalable, and secure database solutions. Our team of certified professionals works closely with you to
             understand your business goals and build robust Oracle environments that support long-term

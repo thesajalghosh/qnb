@@ -10,7 +10,7 @@ const AWSService = () => {
       <div className="container relative" ref={parallaxRef}>
         <h1 className='text-center text-4xl mb-4'>AWS Cloud Services
         </h1>
-        <p className='text-center text-xl'>
+        <p className='text-start text-xl'>
           Empower your business with scalable, secure, and cost-efficient cloud solutions through our
           comprehensive AWS services. At Quantumbrix, we help you harness the full potential of Amazon Web
           Services with expert-led planning, deployment, and ongoing management tailored to your unique
@@ -50,7 +50,7 @@ const AWSService = () => {
                 cloud platforms to AWS—delivered with minimal downtime and maximum reliability.
               </p>
           </ul>
-          <p className='text-xl'>
+          <p className='text-xl mb-8'>
             At Quantumbrix, we bring cloud-native thinking and hands-on AWS expertise to every project. From
             startups to enterprises, we tailor each solution for security, scalability, and cost efficiency. With a
             commitment to transparency, reliability, and 24/7 support, we’re your trusted partner for success in

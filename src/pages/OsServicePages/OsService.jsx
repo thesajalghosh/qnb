@@ -9,7 +9,7 @@ const OsService = () => {
     <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings >
       <div className="container relative" ref={parallaxRef}>
         <h1 className='text-center text-4xl mb-4'>OS Services</h1>
-        <p className='text-center text-xl'>
+        <p className='text-start text-xl'>
           We support a wide range of operating systems—both Linux and Windows—and deliver customized
           solutions to match your infrastructure needs.
         </p>
@@ -56,7 +56,7 @@ const OsService = () => {
                 maintenance.
               </p>
           </ul>
-          <p className='text-xl'>
+          <p className='text-xl mb-8'>
             At Quantumbrix, we bring together certified expertise across both Linux and Windows
             platforms with a customer-first mindset. Our team delivers fast, secure, and cost-effective
             server solutions, backed by 24/7 support and a commitment to long-term success. Partner with
