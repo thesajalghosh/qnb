@@ -89,7 +89,7 @@ const Footer = () => {
             <div className="text-lg font-semibold">Contact Us</div>
             <div className="flex flex-col gap-4 mt-5">
               <div>support@quantumbrix.com</div>
-              <div>89537XXXXX / 98324XXXXX</div>
+              <div>9811170979</div>
             </div>
           </div>
   
