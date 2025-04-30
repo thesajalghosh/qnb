@@ -3,9 +3,10 @@ import Section from "./Section";
 import { discordBlack, facebook, instagram, telegram, twitter } from "../assets";
 import { FaFacebook, FaGripLinesVertical, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { FiInstagram } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import {quantum2} from "../assets";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const socials = [
     {
@@ -71,17 +72,17 @@ const Footer = () => {
             <div className="text-lg font-semibold">Useful Links</div>
             <div className="flex flex-col gap-4 mt-5">
               <div className="flex items-center gap-2">
-                <FaLongArrowAltRight /> About us
+                <FaLongArrowAltRight /><Link to={"/about-us"}>About us</Link>
               </div>
               <div className="flex items-center gap-2">
-                <FaLongArrowAltRight /> Our Portfolio
+                <FaLongArrowAltRight /><Link to={"/portfolio"}>Our Portfolio</Link>
               </div>
               <div className="flex items-center gap-2">
-                <FaLongArrowAltRight /> Our Services
+                <FaLongArrowAltRight /><Link to={"/career"}>Career</Link>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <FaLongArrowAltRight /> Contact Us
-              </div>
+              </div> */}
             </div>
           </div>
   
