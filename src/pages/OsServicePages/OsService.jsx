@@ -7,7 +7,7 @@ const OsService = () => {
  const parallaxRef = useRef(null);
   return (
     <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings >
-      <div className="container relative" ref={parallaxRef}>
+      <div className="container relative text-black" ref={parallaxRef}>
         <h1 className='text-center text-4xl mb-4'>OS Services</h1>
         <p className='text-start text-xl'>
           We support a wide range of operating systems—both Linux and Windows—and deliver customized

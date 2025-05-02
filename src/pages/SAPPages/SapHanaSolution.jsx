@@ -8,7 +8,7 @@ const SapHanaSolution = () => {
     const parallaxRef = useRef(null);
     return (
         <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings >
-        <div className="container relative" ref={parallaxRef}>
+        <div className="container relative text-black" ref={parallaxRef}>
 
 
             <h1 className='text-center text-4xl'>SAP Business One HANA</h1>
