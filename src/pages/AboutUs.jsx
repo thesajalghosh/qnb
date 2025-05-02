@@ -7,7 +7,7 @@ const AboutUs = () => {
     return (
         <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings>
             <div className="container relative text-black" ref={parallaxRef}>
-                <h1 className="text-center text-4xl mb-4">About Quantumbrix</h1>
+                <h1 className="text-center text-4xl mb-4 text-blue-800 font-bold">About Quantumbrix</h1>
                 <p className="text-start text-xl">
                     Founded in 2022, with a highly experienced and versatile team of 12+ years of experience in the IT industry, 
                     Quantumbrix is committed to delivering tailored IT solutions that drive business transformation and growth. 

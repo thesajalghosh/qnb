@@ -11,7 +11,7 @@ const SapBusiness = () => {
             <div className="container relative text-black" ref={parallaxRef}>
 
 
-                <h1 className='text-center text-4xl'>SAP Business One Implementation & Consulting</h1>
+                <h1 className='text-center text-4xl text-blue-800 font-bold'>SAP Business One Implementation & Consulting</h1>
                 <div className='mt-5 pb-6'>
 
 

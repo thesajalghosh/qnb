@@ -9,7 +9,7 @@ const SapUpgradation = () => {
         <div className="container relative text-black" ref={parallaxRef}>
   
   
-        <h1 className='text-center text-4xl'>SAP Upgradation</h1>
+        <h1 className='text-center text-4xl text-blue-800 font-bold'>SAP Upgradation</h1>
         <div className='mt-5 pb-6'>
 
 

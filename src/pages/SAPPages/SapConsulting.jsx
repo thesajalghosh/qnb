@@ -9,7 +9,7 @@ const SapConsulting = () => {
         <div className="container relative text-black" ref={parallaxRef}>
   
   
-        <h1 className='text-center text-4xl'>SAP Consulting</h1>
+        <h1 className='text-center text-4xl text-blue-800 font-bold'>SAP Consulting</h1>
         <div className='mt-5 pb-6'>
 
 
