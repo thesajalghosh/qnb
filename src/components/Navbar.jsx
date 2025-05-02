@@ -94,7 +94,7 @@ const Header = () => {
                 </a>
 
                 <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent lg:p-6 lg:text-black`}>
-                    <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row gap-10 text-xl text-blue-800 font-bold">
+                    <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row gap-10 text-xl text-blue-900 font-bold">
                         <div className="cursor-pointer" onClick={() => navigate("/")}>{navigation[0].title}</div>
                         <Menu menuButton={<MenuButton className="flex items-center gap-1">{navigation[1].title}<IoMdArrowDropdown className="text-black text-lg" />
                         </MenuButton>} transition>

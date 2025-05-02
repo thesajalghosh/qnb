@@ -11,7 +11,8 @@ const SapHanaSolution = () => {
         <div className="container relative text-black" ref={parallaxRef}>
 
 
-            <h1 className='text-center text-4xl text-blue-800 font-bold'>SAP Business One HANA</h1>
+        <h1 className="text-center text-4xl mb-4 text-blue-900 font-bold relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent after:mt-2">
+        SAP Business One HANA</h1>
             <div className='mt-5 pb-6'>
 
 

@@ -7,7 +7,8 @@ const OsService = () => {
     return (
         <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings>
             <div className="container relative text-black" ref={parallaxRef}>
-                <h1 className='text-center text-4xl mb-4 text-blue-800 font-bold'>Oracle Services</h1>
+            <h1 className="text-center text-4xl mb-4 text-blue-900 font-bold relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent after:mt-2">
+            Oracle Services</h1>
                 <p className='text-start text-xl'>
                     Unlock the full potential of your business data with our comprehensive Oracle Database Services.
                     Whether you're looking to design a robust architecture, optimize performance, or ensure high
