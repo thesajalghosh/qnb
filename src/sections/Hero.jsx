@@ -99,9 +99,9 @@ const Hero = () => {
                                     Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
                                 </span>
                             </h1>
-                            <p className="body-1 max-w-3xl mx-auto mb-2 text-n-2 !text-blue-800 lg:mb-2">
+                            <p className="body-1 max-w-3xl mx-auto mb-2 !text-blue-800 lg:mb-2">
                                 Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights</p>
-                            <Button href="#pricing" white>
+                            <Button href="#pricing" blue>
                                 Get started
                             </Button>
                         </div>
