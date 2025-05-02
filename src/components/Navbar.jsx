@@ -196,228 +196,244 @@ const Header = () => {
                         </div>
 
                         {/* Code here abhik */}
-                        <div>
-                            <ul className="p-4">
-                                {navigation.map((item) => (
-                                    <li key={item.id} className="py-2 border-b border-gray-300">
-                                        {item.title === "Services" ? (
-                                            <div>
-                                                <button
-                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left"
-                                                    onClick={() => setHovered(!hovered)} // Toggle dropdown visibility
+                        <div className="flex flex-col">
+    <ul className="p-4">
+        {navigation.map((item) => (
+            <li key={item.id} className="py-2 border-b border-gray-300">
+                {item.title === "Services" ? (
+                    <div>
+                        <button
+                            className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                            onClick={() => setHovered((prev) => !prev)} // Toggle dropdown visibility
+                        >
+                            {item.title}
+                        </button>
+                        {hovered && (
+                            <ul className="pl-4 mt-2">
+                                <li>
+                                    <button
+                                        className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                                        onClick={() =>
+                                            setHoveredSubMenu((prev) =>
+                                                prev === "SAP" ? null : "SAP"
+                                            )
+                                        }
+                                    >
+                                        SAP Solution Services
+                                    </button>
+                                    {hoveredSubMenu === "SAP" && (
+                                        <ul className="pl-4 mt-2">
+                                            <li>
+                                                <Link
+                                                    to={"/services/sap-business"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
                                                 >
-                                                    {item.title}
-                                                </button>
-                                                {hovered && (
-                                                    <ul className="pl-4 mt-2">
-                                                        <li>
-                                                            <button
-                                                                className="text-black hover:text-blue-500 transition-colors w-full text-left"
-                                                                onClick={() => setHoveredSubMenu("SAP")}
-                                                            >
-                                                                SAP Solution Services
-                                                            </button>
-                                                            {hoveredSubMenu === "SAP" && (
-                                                                <ul className="pl-4 mt-2">
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/sap-business"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            SAP Business One Implementation & Consulting
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/sap-consulting"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            SAP Consulting
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/sap-support"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            SAP Support
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/sap-upgradation"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            SAP Upgradation
-                                                                        </Link>
-                                                                    </li>
-                                                                </ul>
-                                                            )}
-                                                        </li>
-                                                        <li>
-                                                            <button
-                                                                className="text-black hover:text-blue-500 transition-colors w-full text-left"
-                                                                onClick={() => setHoveredSubMenu("Oracle")}
-                                                            >
-                                                                Oracle Services
-                                                            </button>
-                                                            {hoveredSubMenu === "Oracle" && (
-                                                                <ul className="pl-4 mt-2">
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/oracle-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            Installation & Configuration
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/oracle-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            Database Upgrades & Migrations
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/oracle-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            Performance Tuning
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/oracle-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            Backup & Recovery Solutions
-                                                                        </Link>
-                                                                    </li>
-                                                                </ul>
-                                                            )}
-                                                        </li>
-                                                        <li>
-                                                            <button
-                                                                className="text-black hover:text-blue-500 transition-colors w-full text-left"
-                                                                onClick={() => setHoveredSubMenu("OS")}
-                                                            >
-                                                                OS Services
-                                                            </button>
-                                                            {hoveredSubMenu === "OS" && (
-                                                                <ul className="pl-4 mt-2">
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/os-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            Installation & Configuration
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/os-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            System Hardening & Security
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/os-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            Patch Management & Updates
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/os-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            Performance Monitoring & Optimization
-                                                                        </Link>
-                                                                    </li>
-                                                                </ul>
-                                                            )}
-                                                        </li>
-                                                        <li>
-                                                            <button
-                                                                className="text-black hover:text-blue-500 transition-colors w-full text-left"
-                                                                onClick={() => setHoveredSubMenu("AWS")}
-                                                            >
-                                                                AWS Cloud Services
-                                                            </button>
-                                                            {hoveredSubMenu === "AWS" && (
-                                                                <ul className="pl-4 mt-2">
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/aws-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            AWS Deployment & Management
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/aws-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            AWS Security
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/aws-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            AWS Cost Optimization
-                                                                        </Link>
-                                                                    </li>
-                                                                    <li>
-                                                                        <Link
-                                                                            to={"/services/aws-service"}
-                                                                            className="block py-1 text-black hover:text-blue-500 transition-colors"
-                                                                            onClick={() => setSideBar(false)}
-                                                                        >
-                                                                            AWS Managed Services
-                                                                        </Link>
-                                                                    </li>
-                                                                </ul>
-                                                            )}
-                                                        </li>
-                                                    </ul>
-                                                )}
-                                            </div>
-                                        ) : (
-                                            <Link
-                                                to={item.url}
-                                                className="text-black hover:text-blue-500 transition-colors"
-                                                onClick={() => setSideBar(false)} // Close sidebar on link click
-                                            >
-                                                {item.title}
-                                            </Link>
-                                        )}
-                                    </li>
-                                ))}
+                                                    SAP Business One Implementation & Consulting
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/sap-consulting"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    SAP Consulting
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/sap-support"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    SAP Support
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/sap-upgradation"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    SAP Upgradation
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    )}
+                                </li>
+                                <li>
+                                    <button
+                                        className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                                        onClick={() =>
+                                            setHoveredSubMenu((prev) =>
+                                                prev === "Oracle" ? null : "Oracle"
+                                            )
+                                        }
+                                    >
+                                        Oracle Services
+                                    </button>
+                                    {hoveredSubMenu === "Oracle" && (
+                                        <ul className="pl-4 mt-2">
+                                            <li>
+                                                <Link
+                                                    to={"/services/oracle-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    Installation & Configuration
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/oracle-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    Database Upgrades & Migrations
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/oracle-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    Performance Tuning
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/oracle-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    Backup & Recovery Solutions
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    )}
+                                </li>
+                                <li>
+                                    <button
+                                        className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                                        onClick={() =>
+                                            setHoveredSubMenu((prev) =>
+                                                prev === "OS" ? null : "OS"
+                                            )
+                                        }
+                                    >
+                                        OS Services
+                                    </button>
+                                    {hoveredSubMenu === "OS" && (
+                                        <ul className="pl-4 mt-2">
+                                            <li>
+                                                <Link
+                                                    to={"/services/os-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    Installation & Configuration
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/os-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    System Hardening & Security
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/os-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    Patch Management & Updates
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/os-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    Performance Monitoring & Optimization
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    )}
+                                </li>
+                                <li>
+                                    <button
+                                        className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                                        onClick={() =>
+                                            setHoveredSubMenu((prev) =>
+                                                prev === "AWS" ? null : "AWS"
+                                            )
+                                        }
+                                    >
+                                        AWS Cloud Services
+                                    </button>
+                                    {hoveredSubMenu === "AWS" && (
+                                        <ul className="pl-4 mt-2">
+                                            <li>
+                                                <Link
+                                                    to={"/services/aws-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    AWS Deployment & Management
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/aws-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    AWS Security
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/aws-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    AWS Cost Optimization
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to={"/services/aws-service"}
+                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                    onClick={() => setSideBar(false)}
+                                                >
+                                                    AWS Managed Services
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    )}
+                                </li>
                             </ul>
-                        </div>
+                        )}
+                    </div>
+                ) : (
+                    <Link
+                        to={item.url}
+                        className="text-black hover:text-blue-500 transition-colors"
+                        onClick={() => setSideBar(false)} // Close sidebar on link click
+                    >
+                        {item.title}
+                    </Link>
+                )}
+            </li>
+        ))}
+    </ul>
+</div>
 
                     </div>
                 </div>
