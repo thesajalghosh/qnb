@@ -180,7 +180,7 @@ const Header = () => {
                     Sign in
                 </Button>
                 {sideBar &&
-                    <div className="fixed top-0 left-0  z-999 lg:hidden h-[100vh] w-[100vw] bg-gray-900/50 backdrop-blur-sm" onClick={() => setSideBar(false)}>
+                    <div className="fixed top-0 left-0  z-999 lg:hidden h-[100vh] w-[100vw] bg-gray-900/50 backdrop-blur-sm">
 
 
                         <div className="bg-[#dbd9d9] h-[100vh] w-[70vw] ">
@@ -199,10 +199,10 @@ const Header = () => {
                                 </div>
 
                                 {/* Code here abhik */}
-                                <div className="flex flex-col">
+                                <div className="flex flex-col overflow-y-auto h-[100vh]">
                                     <ul className="p-4">
                                         {navigation.map((item) => (
-                                            <li key={item.id} className="py-2 border-b border-gray-300">
+                                            <li key={item.id} className="py-2 border-b border-gray-400">
                                                 {item.title === "Services" ? (
                                                     <div>
                                                         <button
@@ -257,7 +257,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/sap-upgradation"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     SAP Upgradation
@@ -268,7 +268,7 @@ const Header = () => {
                                                                 </li>
                                                                 <li>
                                                                     <button
-                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                         onClick={() =>
                                                                             setHoveredSubMenu((prev) =>
                                                                                 prev === "Oracle" ? null : "Oracle"
@@ -282,7 +282,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Installation & Configuration
@@ -291,7 +291,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Database Upgrades & Migrations
@@ -300,7 +300,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Performance Tuning
@@ -309,7 +309,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Backup & Recovery Solutions
@@ -320,7 +320,7 @@ const Header = () => {
                                                                 </li>
                                                                 <li>
                                                                     <button
-                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                         onClick={() =>
                                                                             setHoveredSubMenu((prev) =>
                                                                                 prev === "OS" ? null : "OS"
@@ -334,7 +334,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Installation & Configuration
@@ -343,7 +343,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     System Hardening & Security
@@ -352,7 +352,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Patch Management & Updates
@@ -361,7 +361,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Performance Monitoring & Optimization
@@ -372,7 +372,7 @@ const Header = () => {
                                                                 </li>
                                                                 <li>
                                                                     <button
-                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left"
+                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                         onClick={() =>
                                                                             setHoveredSubMenu((prev) =>
                                                                                 prev === "AWS" ? null : "AWS"
@@ -386,7 +386,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     AWS Deployment & Management
@@ -395,7 +395,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     AWS Security
@@ -404,7 +404,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     AWS Cost Optimization
@@ -413,7 +413,7 @@ const Header = () => {
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors"
+                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     AWS Managed Services
@@ -428,7 +428,7 @@ const Header = () => {
                                                 ) : (
                                                     <Link
                                                         to={item.url}
-                                                        className="text-black hover:text-blue-500 transition-colors"
+                                                        className="text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                         onClick={() => setSideBar(false)} // Close sidebar on link click
                                                     >
                                                         {item.title}
