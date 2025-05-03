@@ -81,10 +81,10 @@ const Hero = () => {
                     spaceBetween={50}
                     slidesPerView={1}
                     // navigation    
-                    // autoplay={{
-                    //     delay: 5000, // 2 seconds
-                    //     disableOnInteraction: false, // Keeps autoplay running even after user interaction
-                    // }}
+                    autoplay={{
+                        delay: 5000, // 2 seconds
+                        disableOnInteraction: false, // Keeps autoplay running even after user interaction
+                    }}
                     pagination={{ clickable: true }}
                     // scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
