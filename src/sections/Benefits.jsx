@@ -55,7 +55,7 @@ const Benefits = () => {
     return (
         <Section id="features">
             <div className="container relative z-2">
-                <Heading className="md:max-w-md lg:max-w-2xl" title="Our services are listed below" />
+                <Heading className="md:max-w-md lg:max-w-2xl text-black" title="Our services are listed below" />
 
                 <div className="flex flex-wrap gap-10 mb-10">
                     {benefits.map((item, i) => (
