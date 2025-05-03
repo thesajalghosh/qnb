@@ -209,8 +209,13 @@ const Services = () => {
 
   return (
     <div className="p-8">
-      <h1 className="text-4xl font-bold text-center text-blue-900 mb-2">Our Services</h1>
-      <div className="h-1 w-16 bg-red-500 mx-auto mb-8"></div>
+        <div className="text-center">
+        <h1 className="text-4xl font-bold !text-center text-blue-900 mb-2 inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent after:mt-2">
+            Our Services
+        </h1>
+        </div>
+    
+      {/* <div className="h-1 w-16 bg-red-500 mx-auto mb-8"></div> */}
       <div className="flex">
         <div className="w-48 flex flex-col space-y-2">
           {tabs.map((tab) => (

@@ -43,7 +43,7 @@ const roadmap = [
 const Roadmap = () => (
     <Section className="overflow-hidden" id="roadmap">
         <div className="container md:pb-10">
-            <Heading title="What we’re working on" />
+            <Heading className="text-4xl font-bold text-blue-900 " title="What we’re working on" />
 
             <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
                 {roadmap.map((item) => {
