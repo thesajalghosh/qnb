@@ -13,7 +13,7 @@ import { RxCross2 } from "react-icons/rx";
 
 
 
- 
+
 const navigation = [
     {
         id: "0",
@@ -95,61 +95,61 @@ const Header = () => {
 
                 <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent lg:p-6 lg:text-black`}>
                     <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row gap-10 text-xl text-blue-900 font-bold">
-                        <div className="cursor-pointer" onClick={() => navigate("/")}>{navigation[0].title}</div>
-                        <Menu menuButton={<MenuButton className="flex items-center gap-1">{navigation[1].title}<IoMdArrowDropdown className="text-black text-lg" />
+                        <div className="cursor-pointer hover:text-red-500" onClick={() => navigate("/")}>{navigation[0].title}</div>
+                        <Menu menuButton={<MenuButton className="flex items-center gap-1 cursor-pointer hover:text-red-500">{navigation[1].title}<IoMdArrowDropdown className="text-black text-lg" />
                         </MenuButton>} transition>
 
-                            <SubMenu label="SAP Solution Services">
-                                <MenuItem>
+                            <SubMenu label="SAP Solution Services" className="hover:text-red-500">
+                                <MenuItem className="hover:text-red-500">
                                     <Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link>
                                 </MenuItem>
-                                <MenuItem>
+                                <MenuItem className="hover:text-red-500">
                                     <Link to={"/services/sap-consulting"}>SAP Consulting</Link>
                                 </MenuItem>
-                                <MenuItem>
+                                <MenuItem className="hover:text-red-500">
                                     <Link to={"/services/sap-support"}>SAP Support</Link>
                                 </MenuItem>
-                                <MenuItem>
+                                <MenuItem className="hover:text-red-500">
                                     <Link to={"/services/sap-upgradation"}>SAP Upgradation</Link>
                                 </MenuItem>
-                                <MenuItem>
+                                <MenuItem className="hover:text-red-500">
                                     <Link to={"/services/sap-business-one-cloud"}>SAP Business One Cloud</Link>
                                 </MenuItem>
-                                <MenuItem>
+                                <MenuItem className="hover:text-red-500">
                                     <Link to={"/services/sap-hana-solution"}>SAP Business One HANA Solution</Link>
                                 </MenuItem>
                             </SubMenu>
-                            <SubMenu label="Oracle Services">
-                                <MenuItem><Link to={"/services/oracle-service"}>Installation & Configuration</Link></MenuItem>
-                                <MenuItem><Link to={"/services/oracle-service"}>Database Upgrades & Migrations</Link></MenuItem>
-                                <MenuItem><Link to={"/services/oracle-service"}>Performance Tuning</Link></MenuItem>
-                                <MenuItem><Link to={"/services/oracle-service"}>Backup & Recovery Solutions</Link></MenuItem>
-                                <MenuItem><Link to={"/services/oracle-service"}>High Availability & Disaster Recovery</Link></MenuItem>
-                                <MenuItem><Link to={"/services/oracle-service"}>Security & Compliance</Link></MenuItem>
-                                <MenuItem><Link to={"/services/oracle-service"}>Managed Services</Link></MenuItem>
+                            <SubMenu label="Oracle Services" className="hover:text-red-500">
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/oracle-service"}>Installation & Configuration</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/oracle-service"}>Database Upgrades & Migrations</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/oracle-service"}>Performance Tuning</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/oracle-service"}>Backup & Recovery Solutions</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/oracle-service"}>High Availability & Disaster Recovery</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/oracle-service"}>Security & Compliance</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/oracle-service"}>Managed Services</Link></MenuItem>
                             </SubMenu>
-                            <SubMenu label="OS Services">
-                                <MenuItem><Link to={"/services/os-service"}>Installation & Configuration</Link></MenuItem>
-                                <MenuItem><Link to={"/services/os-service"}>System Hardening & Security</Link></MenuItem>
-                                <MenuItem><Link to={"/services/os-service"}>Patch Management & Updates</Link></MenuItem>
-                                <MenuItem><Link to={"/services/os-service"}>Performance Monitoring & Optimization</Link></MenuItem>
-                                <MenuItem><Link to={"/services/os-service"}>User & Permission Management</Link></MenuItem>
-                                <MenuItem><Link to={"/services/os-service"}>Backup & Recovery Planning</Link></MenuItem>
-                                <MenuItem><Link to={"/services/os-service"}>OS Migration & Upgrades</Link></MenuItem>
-                                <MenuItem><Link to={"/services/os-service"}>Remote & On-Site Support</Link></MenuItem>
+                            <SubMenu label="OS Services" className="hover:text-red-500">
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>Installation & Configuration</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>System Hardening & Security</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>Patch Management & Updates</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>Performance Monitoring & Optimization</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>User & Permission Management</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>Backup & Recovery Planning</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>OS Migration & Upgrades</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/os-service"}>Remote & On-Site Support</Link></MenuItem>
                             </SubMenu>
-                            <SubMenu label="AWS Cloud Services">
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Deployment & Management</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Security</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Cost Optimization</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Managed Services</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Support</Link></MenuItem>
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Migration</Link></MenuItem>
+                            <SubMenu label="AWS Cloud Services" className="hover:text-red-500">
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/aws-service"}>AWS Deployment & Management</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/aws-service"}>AWS Security</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/aws-service"}>AWS Cost Optimization</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/aws-service"}>AWS Managed Services</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/aws-service"}>AWS Support</Link></MenuItem>
+                                <MenuItem className="hover:text-red-500"><Link to={"/services/aws-service"}>AWS Migration</Link></MenuItem>
                             </SubMenu>
                         </Menu>
-                        <div className="cursor-pointer" onClick={() => navigate('/portfolio')}>{navigation[2].title}</div>
-                        <div className="cursor-pointer" onClick={() => navigate('/about-us')}>{navigation[3].title}</div>
-                        <div className="cursor-pointer" onClick={() => navigate('/career')}>{navigation[4].title}</div>
+                        <div className="cursor-pointer hover:text-red-500" onClick={() => navigate('/portfolio')}>{navigation[2].title}</div>
+                        <div className="cursor-pointer hover:text-red-500" onClick={() => navigate('/about-us')}>{navigation[3].title}</div>
+                        <div className="cursor-pointer hover:text-red-500" onClick={() => navigate('/career')}>{navigation[4].title}</div>
 
 
                     </div>
@@ -173,10 +173,10 @@ const Header = () => {
                     </div>
                 </nav>
 
-                <a href="#signup" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block lg:text-black">
+                <a href="#signup" className="button hidden mr-8 !text-lg !text-black-900 text-white/50 transition-colors hover:text-purple-900 lg:block lg:text-black">
                     New account
                 </a>
-                <Button className="hidden lg:flex" href="#login">
+                <Button className="hidden lg:flex !text-medium" href="#login">
                     Sign in
                 </Button>
                 {sideBar &&
