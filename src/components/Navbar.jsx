@@ -83,13 +83,13 @@ const Header = () => {
     return (
         <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 bg-white  lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}>
             <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-                <a className="block w-[12rem] xl:mr-8" href="#hero">
+                <a className="block w-[12rem] xl:mr-8">
                     <img
                         src={quantum2}
                         // width={190}
                         // height={40}
                         alt="OpenAI"
-                        className="h-[40px] w-[100px]"
+                        className="h-[60px] w-[200px]"
                     />
                 </a>
 

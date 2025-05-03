@@ -1,9 +1,10 @@
 import React from 'react'
 import Hero from '../sections/Hero'
-import Benefits from '../sections/Benefits'
+// import Benefits from '../sections/Benefits'
 import Roadmap from '../sections/Roadmap'
 import Footer from '../components/Footer'
 import TestimonialComponent from '../components/TestimonialComponent'
+import Services from '../sections/Benefits'
 
 const Home = () => {
     return (
@@ -11,7 +12,7 @@ const Home = () => {
 
             <Hero />
             <TestimonialComponent/>
-            <Benefits />
+            <Services />
             {/* <Collaboration /> */}
             {/* <Services /> */}
             {/* <Pricing /> */}
