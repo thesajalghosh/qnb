@@ -8,7 +8,8 @@ const OsService = () => {
   return (
     <Section className="pt-[12rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings >
       <div className="container relative text-black" ref={parallaxRef}>
-        <h1 className='text-center text-4xl mb-4 text-blue-800 font-bold'>OS Services</h1>
+      <h1 className="text-center text-4xl mb-4 text-blue-900 font-bold relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent after:mt-2">
+      OS Services</h1>
         <p className='text-start text-xl'>
           We support a wide range of operating systems—both Linux and Windows—and deliver customized
           solutions to match your infrastructure needs.
