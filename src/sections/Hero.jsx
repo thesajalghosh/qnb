@@ -80,7 +80,7 @@ const Hero = () => {
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                     spaceBetween={50}
                     slidesPerView={1}
-                    navigation
+                    // navigation    
                     // autoplay={{
                     //     delay: 5000, // 2 seconds
                     //     disableOnInteraction: false, // Keeps autoplay running even after user interaction
@@ -89,11 +89,11 @@ const Hero = () => {
                     // scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
-                    className="h-[80dvh]"
+                    className="h-[57vh] md:h-[60vh] lg:h[80vh]"
                 >
                     <SwiperSlide className="h-[200px] flex items-center justify-center">
                         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-2 lg:mb-[6.25rem]">
-                            <h1 className="h1 mb-6">
+                            <h1 className="h1 mb-6 text-black">
                                 Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
                                 <span className="inline-block relative">
                                     Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />

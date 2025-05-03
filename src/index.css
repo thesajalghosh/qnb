@@ -19,7 +19,7 @@ html {
 
 @layer base {
     body {
-        @apply font-sans bg-n-8 text-white text-base;
+        @apply font-sans bg-white text-white text-base;
     }
 }
 

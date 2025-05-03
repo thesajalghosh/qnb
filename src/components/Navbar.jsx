@@ -8,7 +8,7 @@ import { useState } from "react";
 import { Menu, MenuButton, MenuItem, SubMenu } from "@szhsin/react-menu";
 import { RxDotFilled } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
-
+import { RxCross2 } from "react-icons/rx";
 
 
 
@@ -58,6 +58,7 @@ const Header = () => {
     const pathname = useLocation();
     const [openNavigation, setOpenNavigation] = useState(false);
     const [hovered, setHovered] = useState(false);
+    const [sideBar, setSideBar] = useState(false)
     const navigate = useNavigate()
 
     const toggleNavigation = () => {
@@ -78,32 +79,24 @@ const Header = () => {
     };
 
     return (
-        <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}>
+        <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 bg-white  lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}>
             <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
                 <a className="block w-[12rem] xl:mr-8" href="#hero">
-                    <img src={quantum2} width={190} height={40} alt="OpenAI"  />
+                    <img
+                        src={quantum2}
+                        // width={190}
+                        // height={40}
+                        alt="OpenAI"
+                        className="h-[40px] w-[100px]"
+                    />
                 </a>
 
-                <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
+                <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent lg:p-6 lg:text-black`}>
                     <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row gap-10 text-xl">
-                        {/* {navigation.map((item) => (
-                            <a
-                                key={item.id}
-                                href={item.url}
-                                onClick={handleClick}
-                                onMouseEnter={() => item.id === "1" && setHovered(true)}
-                                onMouseLeave={() => item.id === "1" && setHovered(false)}
-                                className={`block relative font-code text-2xl uppercase text-white transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""} px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
-                                    item.url === pathname.hash ? "z-2 lg:text-white" : "lg:text-white/50"
-                                } lg:leading-5 lg:hover:text-white xl:px-12`}
-                            >
-                                {item.title}
-                            </a>
-                        ))} */}
                         <div className="cursor-pointer" onClick={() => navigate("/")}>{navigation[0].title}</div>
                         <Menu menuButton={<MenuButton className="flex items-center gap-1">{navigation[1].title}<IoMdArrowDropdown className="text-white text-lg" />
                         </MenuButton>} transition>
-                           
+
                             <SubMenu label="SAP Solution Services">
                                 <MenuItem>
                                     <Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link>
@@ -144,12 +137,12 @@ const Header = () => {
                                 <MenuItem><Link to={"/services/os-service"}>Remote & On-Site Support</Link></MenuItem>
                             </SubMenu>
                             <SubMenu label="AWS Cloud Services">
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Deployment & Management</Link></MenuItem>                                                             
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Security</Link></MenuItem>                                                             
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Cost Optimization</Link></MenuItem>                                                             
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Managed Services</Link></MenuItem>                                                             
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Support</Link></MenuItem>                                                             
-                                <MenuItem><Link to={"/services/aws-service"}>AWS Migration</Link></MenuItem>                                                             
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Deployment & Management</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Security</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Cost Optimization</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Managed Services</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Support</Link></MenuItem>
+                                <MenuItem><Link to={"/services/aws-service"}>AWS Migration</Link></MenuItem>
                             </SubMenu>
                         </Menu>
                         <div className="cursor-pointer" onClick={() => navigate('/portfolio')}>{navigation[2].title}</div>
@@ -158,57 +151,6 @@ const Header = () => {
 
 
                     </div>
-
-
-                    {/* {hovered && (
-                        <div
-                            className="absolute top-full left-0 w-full bg-white text-black shadow-lg hidden lg:grid grid-cols-5 gap-8 p-8 text-sm"
-                            onMouseEnter={() => setHovered(true)}
-                            onMouseLeave={() => setHovered(false)}
-                        >
-                            <div>
-                                <h4 className="font-semibold mb-2">SAP Solution or SAP Solution Services</h4>
-                                <ul className="space-y-1">
-                                    <li><Link to={"/services/sap-business"}>SAP Business One Implementation & Consulting</Link></li>
-                                    <li><Link to={"/services/sap-consulting"}>SAP Consulting</Link></li>
-                                    <li><Link to={"/services/sap-support"}>SAP Support</Link></li>
-                                    <li><Link to={"/services/sap-upgradation"}>SAP Upgradation</Link></li>
-                                    <li><Link to={"/services/sap-business-one-cloud"}>SAP Business One Cloud</Link></li>
-                                    <li><Link to={"/services/sap-hana-solution"}>SAP Business One HANA Solution</Link></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="font-semibold mb-2">Oracle</h4>
-                                <ul className="space-y-1">
-                                    <li><a href="#">Oracle Database Services</a></li>
-                                    <li><a href="#">Database Migration Services</a></li>
-                                    <li><a href="#">Managed Oracle DBA Services</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="font-semibold mb-2">OS Services</h4>
-                                <ul className="space-y-1">
-                                    <li><a href="#">Linux Server Setup & Configuration</a></li>
-                                    <li><a href="#">System Administration & Maintenance</a></li>
-                                    <li><a href="#">Performance Tuning & Optimization</a></li>
-                                    <li><a href="#">Migration, Patching, Upgrade</a></li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4 className="font-semibold mb-2">AWS Cloud Services</h4>
-                                <ul className="space-y-1">
-                                    <li><a href="#">AWS Deployment & Management</a></li>
-                                    <li><a href="#">AWS Security</a></li>
-                                    <li><a href="#">AWS Cost Optimization</a></li>
-                                    <li><a href="#">AWS Managed Services</a></li>
-                                    <li><a href="#">AWS Support</a></li>
-                                    <li><a href="#">AWS Migration</a></li>
-                                </ul>
-                            </div>
-                      
-                    
-                        </div>
-                    )} */}
 
                     <div className="absolute inset-0 pointer-events-none lg:hidden">
                         <div className="absolute inset-0 opacity-[.03]">
@@ -229,14 +171,37 @@ const Header = () => {
                     </div>
                 </nav>
 
-                <a href="#signup" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block">
+                <a href="#signup" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block lg:text-black">
                     New account
                 </a>
                 <Button className="hidden lg:flex" href="#login">
                     Sign in
                 </Button>
+             {sideBar &&  
+              <div className="fixed top-0 left-0 bg-[#dbd9d9] h-[100vh] w-[70vw] z-999 lg:hidden">
+                    <div className="flex f-col">
+                        <div className="flex justify-between items-center w-[100%] p-2 border-b-[#000000] border-[2px]">
+                            <a className="block w-[12rem] xl:mr-8" href="#hero">
+                                <img
+                                    src={quantum2}
+                                    // width={190}
+                                    // height={40}
+                                    alt="OpenAI"
+                                    className="h-[40px] w-[100px]"
+                                />
+                            </a>
+                            <RxCross2 size={30} color="black" onClick={() => setSideBar(false)}/>
+                        </div>
+                        <div>
+                            // start form here abhik
 
-                <Button className="ml-auto lg:hidden" onClick={toggleNavigation}>
+                            </div>
+
+                    </div>
+                </div>
+                }
+
+                <Button className="ml-auto lg:hidden" onClick={() => setSideBar(!sideBar)}>
                     <MenuSvg openNavigation={openNavigation} />
                 </Button>
             </div>
