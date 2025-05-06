@@ -1,4 +1,4 @@
-import { curve, file02, heroBackground, homeSmile, loading, plusSquare, robot, searchMd, yourlogo } from "../assets";
+import { curve, file02, heroBackground, homeSmile, loading, plusSquare, robot, searchMd, awsLogo , oracleLogo, sapLogo , osLogo} from "../assets";
 import Button from "../components/Button";
 import Section from "../components/Section";
 import { MouseParallax, ScrollParallax } from "react-just-parallax";
@@ -161,20 +161,17 @@ const Hero = () => {
 
 
                             <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                                SAP Website
+                                <img src={sapLogo} width={100} height={28} alt="" />
                             </div>
                             <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                                Oracle Website
+                                <img src={oracleLogo} width={134} height={28} alt="" />
                             </div>
                             <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                                Linux Website
+                                <img src={osLogo} width={134} height={28} alt="" />
+                                {/* Linux Website */}
                             </div>
                             <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                                AWS Website
+                                <img src={awsLogo} width={134} height={28} alt="" />
                             </div>
                         </div>
                     </Marquee>

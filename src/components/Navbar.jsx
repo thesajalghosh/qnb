@@ -55,7 +55,7 @@ const navigation = [
 ];
 
 const Header = () => {
-    const pathname = useLocation();
+    const location = useLocation();
     const [openNavigation, setOpenNavigation] = useState(false);
     // const [hovered, setHovered] = useState(false);
     const [sideBar, setSideBar] = useState(false)
@@ -97,6 +97,11 @@ const Header = () => {
         };
     }, []);
 
+        // Determine text color based on the current route
+        const isHomePage = location.pathname === "/";
+        console.log("isHomePage", isHomePage);
+        const textColor = isHomePage && !scrolled ? "text-white" : "text-black";
+
     return (
         <div className={`fixed top-0 left-0 w-full z-50 border-b border-n-6 ${
             scrolled ? "bg-white shadow-lg" : "bg-white/0"
@@ -114,8 +119,9 @@ const Header = () => {
 
                 <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent lg:p-6 lg:text-white`}>
                     <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row gap-10 text-xl font-bold">
-                        <div className={`"cursor-pointer hover:text-red-500" ${scrolled ? "text-black" : "text-white"}`} onClick={() => navigate("/")}>{navigation[0].title}</div>
-                        <Menu menuButton={<MenuButton className={`flex items-center gap-1 cursor-pointer hover:text-red-500 ${scrolled ? "text-black" : "text-white"}`}>{navigation[1].title}<IoMdArrowDropdown className="text-black text-lg" />
+                        <div className={`${textColor} hover:text-red-500 cursor-pointer`}  onClick={() => navigate("/")}>{navigation[0].title}</div>
+                        <Menu menuButton={<MenuButton className={`flex items-center gap-1 cursor-pointer hover:text-red-500 ${textColor}`}>{navigation[1].title}
+                            <IoMdArrowDropdown className={`${textColor} "text-lg"`} />
                         </MenuButton>} transition>
 
                             <SubMenu label="SAP Solution Services" className="hover:text-red-500">
@@ -166,9 +172,9 @@ const Header = () => {
                                 <MenuItem className="hover:text-red-500"><Link to={"/services/aws-service"}>AWS Migration</Link></MenuItem>
                             </SubMenu>
                         </Menu>
-                        <div className={`"cursor-pointer hover:text-red-500" ${scrolled ? "text-black" : "text-white"}`} onClick={() => navigate('/portfolio')}>{navigation[2].title}</div>
-                        <div className={`"cursor-pointer hover:text-red-500" ${scrolled ? "text-black" : "text-white"}`} onClick={() => navigate('/about-us')}>{navigation[3].title}</div>
-                        <div className={`"cursor-pointer hover:text-red-500" ${scrolled ? "text-black" : "text-white"}`} onClick={() => navigate('/career')}>{navigation[4].title}</div>
+                        <div className={`${textColor} hover:text-red-500 cursor-pointer`} onClick={() => navigate('/portfolio')}>{navigation[2].title}</div>
+                        <div className={`${textColor} hover:text-red-500 cursor-pointer`} onClick={() => navigate('/about-us')}>{navigation[3].title}</div>
+                        <div className={`${textColor} hover:text-red-500 cursor-pointer`} onClick={() => navigate('/career')}>{navigation[4].title}</div>
 
 
                     </div>
