@@ -52,7 +52,7 @@ const TestimonialComponent = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">What Our Clients Say</h2>
+      <h2 className="text-4xl mb-[35px] font-bold !text-center text-blue-900 mb-2 inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent after:mt-2 ml-[240px]">What Our Clients Say</h2>
       
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
