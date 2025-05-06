@@ -7,7 +7,7 @@ import Notification from "../components/Notification";
 import PlusSvg from "../assets/svg/PlusSvg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper/modules';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -65,29 +65,18 @@ const Hero = () => {
     return (
         <Section className=" " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="hero">
             <div className="relative" ref={parallaxRef}>
-                {/* <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-                    <h1 className="h1 mb-6">
-                        Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
-                        <span className="inline-block relative">
-                            Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
-                        </span>
-                    </h1>
-                    <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-                    Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights</p>
-                    <Button href="#pricing" white>
-                        Get started
-                    </Button>
-                </div> */}
                 <Swiper
                     // install Swiper modules
-                    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade]}
                     spaceBetween={50}
                     slidesPerView={1}
+                    effect={'fade'}
+
                     // navigation    
-                    // autoplay={{
-                    //     delay: 5000, // 2 seconds
-                    //     disableOnInteraction: false, // Keeps autoplay running even after user interaction
-                    // }}
+                    autoplay={{
+                        delay: 5000, // 2 seconds
+                        disableOnInteraction: false, // Keeps autoplay running even after user interaction
+                    }}
                     pagination={{ clickable: true }}
                     // scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
@@ -95,70 +84,70 @@ const Hero = () => {
                     className="h-[57vh] md:h-[60vh] lg:h-[90vh]"
                 >
                     <SwiperSlide className="h-[200px] flex items-center justify-center">
-                        <div className="relative w-[100vw] h-[90vh] bg-cover bg-center animate-scale" style={{ backgroundImage: `url(${FirstSlide})` }}>
-                            <div className="absolute inset-0 flex flex-col items-start justify-center text-center z-10 lg:m-[100px]">
-                                {/* <div className="mb-6 text-white text-[6rem]">
-                                    Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
-                                    <span className="inline-block relative">
-                                        Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
-                                    </span>
-                                </div> */}
-                                <p className="w-[40vw] text-white font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[2.5rem] mb-6 leading-relaxed text-left">
-                                    Explore the Possibilities of Developement Connect with Quantum Brix
+                        <div className="relative w-[100vw] h-[57vh] md:h-[60vh] lg:h-[90vh]">
+                            {/* Render the image using <img> */}
+                            <img
+                                src={FirstSlide}
+                                alt="Slide Image"
+                                className="w-[100vw] h-[57vh] md:h-[60vh] lg:h-[90vh] object-fit"
+                            />
+                            {/* Content positioned absolutely over the image */}
+                            <div className="absolute inset-0 bg-black/10 flex flex-col items-start justify-center text-center z-10 p-4 lg:m-[100px]">
+                                <p className="w-full md:w-[45vw] text-white font-bold text-[1.1rem] sm:text-[2rem] md:text-[3.5rem] lg:text-[2.5rem] mb-4 leading-relaxed text-left">
+                                    Explore the Possibilities of Development Connect with Quantum Brix
                                 </p>
-                                <p className="w-[40vw] text-white/70 font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[1.5rem] mb-6 leading-relaxed text-left">
+                                <p className="w-full md:w-[45vw] text-white/70 text-[0.9rem] sm:text-[1rem] md:text-[2rem] lg:text-[1rem] mb-4 leading-relaxed text-left">
                                     Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights
                                 </p>
-                                <button href="#pricing" className="lg:text-[1rem] lg:p-3 bg-red-600 rounded">
+                                <button href="#pricing" className="text-[0.875rem] sm:text-[1rem] p-2 sm:p-3 bg-red-600 rounded">
                                     Get started
                                 </button>
                             </div>
                         </div>
-
                     </SwiperSlide>
                     <SwiperSlide className="h-[200px] flex items-center justify-center">
-                        <div className="relative w-[100vw] h-[90vh] bg-cover bg-center animate-scale" style={{ backgroundImage: `url(${SecondSlide})` }}>
-                            <div className="absolute inset-0 flex flex-col items-start justify-center text-center z-10 lg:m-[100px]">
-                                {/* <div className="mb-6 text-white text-[6rem]">
-                                    Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
-                                    <span className="inline-block relative">
-                                        Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
-                                    </span>
-                                </div> */}
-                                <p className="w-[40vw] text-white font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[2.5rem] mb-6 leading-relaxed text-left">
-                                    Explore the Possibilities of Developement Connect with Quantum Brix
+                        <div className="relative w-[100vw] h-[57vh] md:h-[60vh] lg:h-[90vh]">
+                            {/* Render the image using <img> */}
+                            <img
+                                src={SecondSlide}
+                                alt="Slide Image"
+                                className="w-[100vw] h-[57vh] md:h-[60vh] lg:h-[90vh] object-fit"
+                            />
+                            {/* Content positioned absolutely over the image */}
+                            <div className="absolute inset-0 bg-black/10 flex flex-col items-start justify-center text-center z-10 p-4 lg:m-[100px]">
+                                <p className="w-full md:w-[45vw] text-white font-bold text-[1.1rem] sm:text-[2rem] md:text-[3.5rem] lg:text-[2.5rem] mb-4 leading-relaxed text-left">
+                                    Explore the Possibilities of Development Connect with Quantum Brix
                                 </p>
-                                <p className="w-[40vw] text-white/70 font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[1.5rem] mb-6 leading-relaxed text-left">
+                                <p className="w-full md:w-[45vw] text-white/70 text-[0.9rem] sm:text-[1rem] md:text-[2rem] lg:text-[1rem] mb-4 leading-relaxed text-left">
                                     Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights
                                 </p>
-                                <button href="#pricing" className="lg:text-[1rem] lg:p-3 bg-red-600 rounded">
+                                <button href="#pricing" className="text-[0.875rem] sm:text-[1rem] p-2 sm:p-3 bg-red-600 rounded">
                                     Get started
                                 </button>
                             </div>
                         </div>
-
                     </SwiperSlide>
                     <SwiperSlide className="h-[200px] flex items-center justify-center">
-                        <div className="relative w-[100vw] h-[90vh] bg-cover bg-center animate-scale" style={{ backgroundImage: `url(${ThirdSlide})` }}>
-                            <div className="absolute inset-0 flex flex-col items-start justify-center text-center z-10 lg:m-[100px]">
-                                {/* <div className="mb-6 text-white text-[6rem]">
-                                    Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
-                                    <span className="inline-block relative">
-                                        Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
-                                    </span>
-                                </div> */}
-                                <p className="w-[40vw] text-white font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[2.5rem] mb-6 leading-relaxed text-left">
-                                    Explore the Possibilities of Developement Connect with Quantum Brix
+                        <div className="relative w-[100vw] h-[57vh] md:h-[60vh] lg:h-[90vh]">
+                            {/* Render the image using <img> */}
+                            <img
+                                src={ThirdSlide}
+                                alt="Slide Image"
+                                className="w-[100vw] h-[57vh] md:h-[60vh] lg:h-[90vh] object-fit"
+                            />
+                            {/* Content positioned absolutely over the image */}
+                            <div className="absolute inset-0 bg-black/10 flex flex-col bg-black/40 items-start justify-center text-center z-10 p-4 lg:m-[100px]">
+                                <p className="w-full md:w-[45vw] text-white font-bold text-[1.1rem] sm:text-[2rem] md:text-[3.5rem] lg:text-[2.5rem] mb-4 leading-relaxed text-left">
+                                    Explore the Possibilities of Development Connect with Quantum Brix
                                 </p>
-                                <p className="w-[40vw] text-white/70 font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[1.5rem] mb-6 leading-relaxed text-left">
+                                <p className="w-full md:w-[45vw] text-white/70 text-[0.9rem] sm:text-[1rem] md:text-[2rem] lg:text-[1rem] mb-4 leading-relaxed text-left">
                                     Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights
                                 </p>
-                                <button href="#pricing" className="lg:text-[1rem] lg:p-3 bg-red-600 rounded">
+                                <button href="#pricing" className="text-[0.875rem] sm:text-[1rem] p-2 sm:p-3 bg-red-600 rounded">
                                     Get started
                                 </button>
                             </div>
                         </div>
-
                     </SwiperSlide>
                     {/* <SwiperSlide className="h-[500px] flex items-center justify-center">Slide 3</SwiperSlide>
                     <SwiperSlide className="h-[500px] flex items-center justify-center">Slide 4</SwiperSlide> */}

@@ -17,16 +17,16 @@ const Services = () => {
               </p>
               <div className="flex gap-8 text-center mb-6">
                 <div>
-                  <p className="text-2xl font-bold text-black">450+</p>
-                  <p className="font-semibold text-black">Customers</p>
+                  <p className="text-[15px] md:text-2xl font-bold text-black">450+</p>
+                  <p className="text-[15px] md:text-2xl font-semibold text-black">Customers</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-black">400+</p>
-                  <p className="font-semibold text-black">Specialists</p>
+                  <p className="text-[15px] md:text-2xl font-bold text-black">400+</p>
+                  <p className="text-[15px] md:text-2xl font-semibold text-black">Specialists</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-black">4000+</p>
-                  <p className="font-semibold text-black">Years of collective experience</p>
+                  <p className="text-[15px] md:text-2xl font-bold text-black">4000+</p>
+                  <p className="text-[15px] md:text-2xl font-semibold text-black">Years of collective experience</p>
                 </div>
               </div>
               <h3 className="text-xl font-semibold mb-2 text-blue-900">Our Partners</h3>
@@ -42,7 +42,7 @@ const Services = () => {
                 ))}
               </div>
             </div>
-            <div className="w-1/3 bg-white shadow p-4 rounded border">
+            <div className="w-[90vw]  md:w-1/3 bg-white shadow p-4 rounded border">
               <h3 className="text-lg font-bold text-blue-900 mb-4">What We Offer</h3>
               <ul className="list-disc list-inside space-y-2 text-sm text-gray-800">
                 <li>SAP Business One Implementation & Consulting</li>
@@ -139,7 +139,7 @@ const Services = () => {
               ))}
             </div>
           </div>
-          <div className="w-1/3 bg-white shadow p-4 rounded border">
+          <div className="w-[90vw]  md:w-1/3 bg-white shadow p-4 rounded border">
             <h3 className="text-lg font-bold text-blue-900 mb-4">What We Offer</h3>
             <ul className="list-disc list-inside space-y-2 text-sm text-gray-800">
               <li>AWS Deployment & Management</li>
@@ -187,7 +187,7 @@ const Services = () => {
               ))}
             </div>
           </div>
-          <div className="w-1/3 bg-white shadow p-4 rounded border">
+          <div className="w-[90vw]  md:w-1/3 bg-white shadow p-4 rounded border">
             <h3 className="text-lg font-bold text-blue-900 mb-4">What We Offer</h3>
             <ul className="list-disc list-inside space-y-2 text-sm text-gray-800">
               <li>Installation & Configuration</li>
@@ -208,16 +208,16 @@ const Services = () => {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-4">
         <div className="text-center">
-        <h1 className="text-4xl font-bold !text-center text-blue-900 mb-2 inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent after:mt-2">
+        <h1 className="text-4xl mb-[35px] font-bold !text-center text-blue-900 mb-2 inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-gradient-to-r after:from-red-500 after:to-transparent after:mt-2">
             Our Services
         </h1>
         </div>
     
       {/* <div className="h-1 w-16 bg-red-500 mx-auto mb-8"></div> */}
-      <div className="flex">
-        <div className="w-48 flex flex-col space-y-2">
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="w-[90vw]  md:w-48 flex flex-col space-y-2">
           {tabs.map((tab) => (
             <button
               key={tab}
@@ -230,7 +230,7 @@ const Services = () => {
             </button>
           ))}
         </div>
-        <div className="flex-1 pl-8">{renderContent()}</div>
+        <div className="flex-1 md:pl-8">{renderContent()}</div>
       </div>
     </div>
   );
