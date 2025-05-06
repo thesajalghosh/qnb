@@ -13,6 +13,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Marquee from "react-fast-marquee";
 import { Autoplay } from 'swiper/modules';
+import FirstSlide from "../assets/hero/first.png";
+import SecondSlide from "../assets/hero/second.png";
+import ThirdSlide from "../assets/hero/third.png";
 const BackgroundCircles = ({ parallaxRef }) => {
     const [mounted, setMounted] = useState(false);
 
@@ -60,8 +63,8 @@ const Hero = () => {
     const parallaxRef = useRef(null);
 
     return (
-        <Section className="pt-[8rem] -mt-[5.25rem]" crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="hero">
-            <div className="container relative" ref={parallaxRef}>
+        <Section className=" " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="hero">
+            <div className="relative" ref={parallaxRef}>
                 {/* <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                     <h1 className="h1 mb-6">
                         Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
@@ -81,34 +84,80 @@ const Hero = () => {
                     spaceBetween={50}
                     slidesPerView={1}
                     // navigation    
-                    autoplay={{
-                        delay: 5000, // 2 seconds
-                        disableOnInteraction: false, // Keeps autoplay running even after user interaction
-                    }}
+                    // autoplay={{
+                    //     delay: 5000, // 2 seconds
+                    //     disableOnInteraction: false, // Keeps autoplay running even after user interaction
+                    // }}
                     pagination={{ clickable: true }}
                     // scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
-                    className="h-[57vh] md:h-[60vh] lg:h[80vh]"
+                    className="h-[57vh] md:h-[60vh] lg:h-[90vh]"
                 >
                     <SwiperSlide className="h-[200px] flex items-center justify-center">
-                        <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-2 lg:mb-[6.25rem]">
-                            <h1 className="h1 mb-6 text-black">
-                                Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
-                                <span className="inline-block relative">
-                                    Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
-                                </span>
-                            </h1>
-                            <p className="body-1 max-w-3xl mx-auto mb-2 !text-blue-900 lg:mb-2 font-bold">
-                                Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights</p>
-                            <Button href="#pricing" blue>
-                                Get started
-                            </Button>
+                        <div className="relative w-[100vw] h-[90vh] bg-cover bg-center animate-scale" style={{ backgroundImage: `url(${FirstSlide})` }}>
+                            <div className="absolute inset-0 flex flex-col items-start justify-center text-center z-10 lg:m-[100px]">
+                                {/* <div className="mb-6 text-white text-[6rem]">
+                                    Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
+                                    <span className="inline-block relative">
+                                        Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
+                                    </span>
+                                </div> */}
+                                <p className="w-[40vw] text-white font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[2.5rem] mb-6 leading-relaxed text-left">
+                                    Explore the Possibilities of Developement Connect with Quantum Brix
+                                </p>
+                                <p className="w-[40vw] text-white/70 font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[1.5rem] mb-6 leading-relaxed text-left">
+                                    Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights
+                                </p>
+                                <button href="#pricing" className="lg:text-[1rem] lg:p-3 bg-red-600 rounded">
+                                    Get started
+                                </button>
+                            </div>
                         </div>
 
                     </SwiperSlide>
                     <SwiperSlide className="h-[200px] flex items-center justify-center">
-                        <img src={robot} className="w-full scale-[1.2] translate-y-[8%] md:scale-[0.7] md:-translate-y-[10%] lg:-translate-y-[23%]" width={1024} height={490} alt="" />
+                        <div className="relative w-[100vw] h-[90vh] bg-cover bg-center animate-scale" style={{ backgroundImage: `url(${SecondSlide})` }}>
+                            <div className="absolute inset-0 flex flex-col items-start justify-center text-center z-10 lg:m-[100px]">
+                                {/* <div className="mb-6 text-white text-[6rem]">
+                                    Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
+                                    <span className="inline-block relative">
+                                        Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
+                                    </span>
+                                </div> */}
+                                <p className="w-[40vw] text-white font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[2.5rem] mb-6 leading-relaxed text-left">
+                                    Explore the Possibilities of Developement Connect with Quantum Brix
+                                </p>
+                                <p className="w-[40vw] text-white/70 font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[1.5rem] mb-6 leading-relaxed text-left">
+                                    Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights
+                                </p>
+                                <button href="#pricing" className="lg:text-[1rem] lg:p-3 bg-red-600 rounded">
+                                    Get started
+                                </button>
+                            </div>
+                        </div>
+
+                    </SwiperSlide>
+                    <SwiperSlide className="h-[200px] flex items-center justify-center">
+                        <div className="relative w-[100vw] h-[90vh] bg-cover bg-center animate-scale" style={{ backgroundImage: `url(${ThirdSlide})` }}>
+                            <div className="absolute inset-0 flex flex-col items-start justify-center text-center z-10 lg:m-[100px]">
+                                {/* <div className="mb-6 text-white text-[6rem]">
+                                    Explore the Possibilities of&nbsp;Developement&nbsp;Connect with {` `}
+                                    <span className="inline-block relative">
+                                        Quantum Brix <img src={curve} className="absolute top-full left-0 w-full xl:-mt-2" width={624} height={28} alt="" />
+                                    </span>
+                                </div> */}
+                                <p className="w-[40vw] text-white font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[2.5rem] mb-6 leading-relaxed text-left">
+                                    Explore the Possibilities of Developement Connect with Quantum Brix
+                                </p>
+                                <p className="w-[40vw] text-white/70 font-bold text-[2.5rem] md:text-[3.5rem] lg:text-[1.5rem] mb-6 leading-relaxed text-left">
+                                    Quantum Brix delivers expert SAP and Oracle solutions, transforming enterprise systems with innovation, efficiency, scalability, and intelligent business insights
+                                </p>
+                                <button href="#pricing" className="lg:text-[1rem] lg:p-3 bg-red-600 rounded">
+                                    Get started
+                                </button>
+                            </div>
+                        </div>
 
                     </SwiperSlide>
                     {/* <SwiperSlide className="h-[500px] flex items-center justify-center">Slide 3</SwiperSlide>
@@ -116,28 +165,28 @@ const Hero = () => {
 
                 </Swiper>
 
-                <div className="hidden relative z-10 mt-20 lg:block">
+                <div className="hidden relative z-10 mt-20 lg:block text-black">
                     {/* <h5 className="tagline mb-6 text-center text-white/50">Quantum Brix Helping People Create Beautiful Website</h5> */}
                     <Marquee>
                         <div className="flex items-center justify-center gap-[90px]">
 
 
-                        <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                            {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            SAP Website
-                        </div>
-                        <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                            {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            Oracle Website
-                        </div>
-                        <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                            {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            Linux Website
-                        </div>
-                        <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
-                            {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
-                            AWS Website
-                        </div>
+                            <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
+                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
+                                SAP Website
+                            </div>
+                            <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
+                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
+                                Oracle Website
+                            </div>
+                            <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
+                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
+                                Linux Website
+                            </div>
+                            <div className="flex items-center justify-center flex-[0_0_33.33%] h-[8.5rem]">
+                                {/* <img src={yourlogo} width={134} height={28} alt="" /> */}
+                                AWS Website
+                            </div>
                         </div>
                     </Marquee>
                 </div>
@@ -146,7 +195,7 @@ const Hero = () => {
             {/* <div className="hidden absolute top-[55.25rem] left-10 right-10 h-0.25 bg-n-6 pointer-events-none xl:block" />
             <PlusSvg className="hidden absolute top-[54.9375rem] left-[2.1875rem] z-2 pointer-events-none xl:block" />
             <PlusSvg className="hidden absolute top-[54.9375rem] right-[2.1875rem] z-2 pointer-events-none xl:block" /> */}
-        
+
         </Section>
     );
 };

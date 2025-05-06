@@ -22,7 +22,7 @@ import AWSService from './pages/AWSPages/AWSService';
 function App() {
   return (
     <Router>
-            <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+            <div className="overflow-hidden">
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
