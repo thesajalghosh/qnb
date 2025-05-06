@@ -198,7 +198,7 @@ const Header = () => {
                     </div>
                 </nav>
 
-                <a href="#signup" className={`text-white button hidden mr-8 !text-lg !text-black-900 text-white/50 transition-colors hover:text-purple-900 lg:block  ${scrolled ? "lg:text-black" : "lg:text-white"}`}>
+                <a href="#signup" className={`text-white button hidden mr-8 !text-lg !text-black-900 text-white/50 transition-colors hover:text-red-500 lg:block  ${scrolled ? "lg:text-black" : "lg:text-white"}`}>
                     New account
                 </a>
                 <Button className="hidden lg:flex !text-medium" href="#login">
