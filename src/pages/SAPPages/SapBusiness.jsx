@@ -23,7 +23,7 @@ const SapBusiness = () => {
                         integrate and manage their
                         key operations – from finance and sales to inventory and customer relations – all in a single, unified system.
                     </p>
-                    <h2 className='text-2xl mt-5'>Why Choose SAP Business One?</h2>
+                    <h2 className='text-2xl mt-5 mb-2'>Why Choose SAP Business One?</h2>
                     <ul className='pl-4 flex flex-col gap-3 empty-2'>
                         <li className='flex gap-2'><FaArrowRightLong size={16} /> End-to-End Business Management: 
                             Gain complete control over your business with a
@@ -39,13 +39,13 @@ const SapBusiness = () => {
                              </li>
                     </ul>
 
-                    <h2 className='text-2xl mt-5'>Why Choose Quantumbrix as Your SAP Partner?</h2>
+                    <h2 className='text-2xl mt-5 mb-2'>Why Choose Quantumbrix as Your SAP Partner?</h2>
                     <p>
                     Choosing the right SAP partner is crucial for a seamless ERP implementation and
                      long-term business success. At Quantumbrix, we specialize in delivering tailored SAP Business
                      One solutions that help businesses optimize operations, enhance efficiency, and drive growth.
                     </p>
-                    <h2 className='text-2xl mt-5'>What Makes Quantumbrix Different?</h2>
+                    <h2 className='text-2xl mt-5 mb-2'>What Makes Quantumbrix Different?</h2>
                     <ul className='pl-4 flex flex-col gap-3 empty-2'>
                         <li className='flex gap-2'><FaArrowRightLong size={20} /> Expertise & Experience – Our team of experienced SAP consultants has extensive industry knowledge
                              and hands-on experience in implementing SAP Business One for businesses of all sizes.

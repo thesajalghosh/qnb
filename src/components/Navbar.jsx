@@ -284,6 +284,24 @@ const Header = () => {
                                                                                     SAP Upgradation <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/sap-business-one-cloud"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    SAP Business One Cloud <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/sap-hana-solution"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                   SAP Business One HANA Solution <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
                                                                         </ul>
                                                                     )}
                                                                 </li>
@@ -334,6 +352,33 @@ const Header = () => {
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     Backup & Recovery Solutions <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/oracle-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    High Availability & Disaster Recovery <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/oracle-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                   Security & Compliance <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/oracle-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    Managed Services <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                         </ul>
@@ -388,6 +433,42 @@ const Header = () => {
                                                                                     Performance Monitoring & Optimization <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/os-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    User & Permission Management <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/os-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    Backup & Recovery Planning <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/os-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    OS Migration & Upgrades <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/os-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    Remote & On-Site Support <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
                                                                         </ul>
                                                                     )}
                                                                 </li>
@@ -438,6 +519,24 @@ const Header = () => {
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
                                                                                     AWS Managed Services  <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/aws-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    AWS Support  <IoMdArrowRoundForward/>
+                                                                                </Link>
+                                                                            </li>
+                                                                            <li>
+                                                                                <Link
+                                                                                    to={"/services/aws-service"}
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
+                                                                                    onClick={() => setSideBar(false)}
+                                                                                >
+                                                                                    AWS Migration  <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                         </ul>

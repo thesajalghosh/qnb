@@ -17,38 +17,38 @@ const AboutUs = () => {
                 </p>
                 <ul className="pl-4 flex flex-col gap-3 mt-4">
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>SAP Implementation: Designing, configuring, and optimizing SAP landscapes to streamline finance, supply chain, and HR processes.</span>
                     </li>
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>AWS Services: Architecting cloud-native infrastructures, migrating workloads, and automating deployments on Amazon Web Services.</span>
                     </li>
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>Oracle Solutions: Implementing and fine-tuning Oracle databases and applications to ensure peak performance, security, and scalability.</span>
                     </li>
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>OS Services: Managing and hardening operating systems (Linux & Windows), patching, monitoring, and automation for reliable uptime.</span>
                     </li>
                 </ul>
                 <h3 className="text-2xl mt-5">Why Hire Quantumbrix</h3>
                 <ul className="pl-4 flex flex-col gap-3 mt-4">
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>End-to-End Delivery: We partner with you from strategy and design through implementation, training, and ongoing support.</span>
                     </li>
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>Certified Expertise: Our consultants hold AWS, SAP, and Oracle certifications—and maintain hands-on skills in system administration and automation.</span>
                     </li>
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>Agile & Collaborative: We work in tight sprints, sharing progress and knowledge with your internal teams every step of the way.</span>
                     </li>
                     <li className="flex gap-2 align-center text-xl">
-                        <FaArrowRightLong size={16} /> 
+                        <FaArrowRightLong className="text-[3rem] md:text-[1.125rem] lg:text-[1.5rem]" /> 
                         <span>Security & Compliance: From OS hardening to cloud-native controls, we build security into every layer of your infrastructure.</span>
                     </li>
                 </ul>
