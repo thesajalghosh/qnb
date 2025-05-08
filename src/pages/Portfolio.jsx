@@ -8,7 +8,7 @@ const Portfolio = () => {
       <div className="container relative mb-[5rem]" ref={parallaxRef}>
 
 
-      <marquee className="text-4xl text-blue-900">Coming Soon...</marquee>
+      <marquee className="text-4xl text-blue-900 mt-16">Coming Soon...</marquee>
 
       </div>
     </Section>
