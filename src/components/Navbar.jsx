@@ -42,7 +42,7 @@ const navigation = [
     },
     {
         id: "6",
-        title: "Sign in",
+        title: "New Account",
         url: "#login",
         onlyMobile: true,
     },
@@ -196,7 +196,7 @@ const Header = () => {
                     New account
                 </a> */}
                 <Button className="hidden lg:flex !text-[18px]" href="#login">
-                    Sign in
+                    New Account
                 </Button>
                 {sideBar &&
                     <div className="fixed top-0 left-0  z-999 lg:hidden h-[100vh] w-[100vw] bg-gray-900/50 backdrop-blur-sm">
