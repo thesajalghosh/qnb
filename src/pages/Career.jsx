@@ -71,7 +71,7 @@ const Career = () => {
                 <div className="bg-white rounded-lg shadow-lg p-6 mb-8 ">
                     <div className="flex justify-between items-center">
                         <div>
-                            <h2 className="text-xl font-semibold">{jobData.title}</h2>
+                            <h2 className="text-xl font-bold text-black">{jobData.title}</h2>
                             <p className="text-gray-600">Experience: {jobData.experience}</p>
                             <p className="text-gray-600">Positions: {jobData.positions}</p>
                         </div>
