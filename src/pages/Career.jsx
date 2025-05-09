@@ -78,13 +78,13 @@ const Career = () => {
                         <div className="space-x-4">
                             <button
                                 onClick={() => setShowDetails(!showDetails)}
-                                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 "
+                                className="bg-blue-500 text-white px-[10px] py-2 h-15 ml-4 rounded hover:bg-blue-600 md:px-[11px] mb-[4px] lg:w-auto lg:h-[35px]"
                             >
                                 View Details
                             </button>
                             <button
                                 onClick={() => setShowApplicationForm(true)}
-                                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                                className="bg-green-500 text-white px-4 py-2 h-15 rounded hover:bg-green-600 lg:w-auto lg:h-[35px] lg:pb-[4px]"
                             >
                                 Apply Now
                             </button>
