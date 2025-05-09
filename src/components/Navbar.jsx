@@ -9,6 +9,8 @@ import { Menu, MenuButton, MenuItem, SubMenu } from "@szhsin/react-menu";
 import { RxDotFilled } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
+import { MdArrowDropDown } from "react-icons/md";
+import { IoMdArrowRoundForward } from "react-icons/io";
 
 
 
@@ -221,65 +223,65 @@ const Header = () => {
                                 <div className="flex flex-col overflow-y-auto h-[100vh]">
                                     <ul className="p-4">
                                         {navigation.map((item) => (
-                                            <li key={item.id} className="py-2 border-b border-gray-400">
+                                            <li key={item.id} className={`py-2 ${item.title !== "Services" && "border-b border-gray-400"}`}>
                                                 {item.title === "Services" ? (
                                                     <div>
                                                         <button
                                                             className="text-black hover:text-blue-500 transition-colors
                                                              w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
-                                                            onClick={() => setHovered((prev) => !prev)} // Toggle dropdown visibility
+                                                            onClick={() => setHovered((prev) => !prev)}
                                                         >
-                                                            {item.title}
+                                                            {item.title} {hovered ? <MdArrowDropDown size={25}/> : <MdArrowDropDown className="rotate-180" size={25}/>}
                                                         </button>
                                                         {hovered && (
                                                             <ul className="pl-4 mt-2">
                                                                 <li>
                                                                     <button
-                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.3rem]"
                                                                         onClick={() =>
                                                                             setHoveredSubMenu((prev) =>
                                                                                 prev === "SAP" ? null : "SAP"
                                                                             )
                                                                         }
                                                                     >
-                                                                        SAP Solution Services
+                                                                        SAP Solution Services  {hoveredSubMenu === "SAP" ? <MdArrowDropDown size={25}/> : <MdArrowDropDown className="rotate-180" size={25}/>}
                                                                     </button>
                                                                     {hoveredSubMenu === "SAP" && (
                                                                         <ul className="pl-4 mt-2">
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/sap-business"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors border-b !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    SAP Business One Implementation & Consulting
+                                                                                    SAP Business One Implementation & Consulting <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/sap-consulting"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors border-b !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    SAP Consulting
+                                                                                    SAP Consulting <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/sap-support"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors border-b !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    SAP Support
+                                                                                    SAP Support <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/sap-upgradation"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    SAP Upgradation
+                                                                                    SAP Upgradation <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                         </ul>
@@ -287,51 +289,51 @@ const Header = () => {
                                                                 </li>
                                                                 <li>
                                                                     <button
-                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.3rem]"
                                                                         onClick={() =>
                                                                             setHoveredSubMenu((prev) =>
                                                                                 prev === "Oracle" ? null : "Oracle"
                                                                             )
                                                                         }
                                                                     >
-                                                                        Oracle Services
+                                                                        Oracle Services {hoveredSubMenu === "Oracle" ? <MdArrowDropDown size={25}/> : <MdArrowDropDown className="rotate-180" size={25}/>}
                                                                     </button>
                                                                     {hoveredSubMenu === "Oracle" && (
                                                                         <ul className="pl-4 mt-2">
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    Installation & Configuration
+                                                                                    Installation & Configuration <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    Database Upgrades & Migrations
+                                                                                    Database Upgrades & Migrations <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    Performance Tuning
+                                                                                    Performance Tuning <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/oracle-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    Backup & Recovery Solutions
+                                                                                    Backup & Recovery Solutions <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                         </ul>
@@ -339,51 +341,51 @@ const Header = () => {
                                                                 </li>
                                                                 <li>
                                                                     <button
-                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.3rem]"
                                                                         onClick={() =>
                                                                             setHoveredSubMenu((prev) =>
                                                                                 prev === "OS" ? null : "OS"
                                                                             )
                                                                         }
                                                                     >
-                                                                        OS Services
+                                                                        OS Services {hoveredSubMenu === "OS" ? <MdArrowDropDown size={25}/> : <MdArrowDropDown className="rotate-180" size={25}/>}
                                                                     </button>
                                                                     {hoveredSubMenu === "OS" && (
                                                                         <ul className="pl-4 mt-2">
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    Installation & Configuration
+                                                                                    Installation & Configuration <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    System Hardening & Security
+                                                                                    System Hardening & Security <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    Patch Management & Updates
+                                                                                    Patch Management & Updates <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/os-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    Performance Monitoring & Optimization
+                                                                                    Performance Monitoring & Optimization <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                         </ul>
@@ -391,51 +393,51 @@ const Header = () => {
                                                                 </li>
                                                                 <li>
                                                                     <button
-                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                        className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.3rem]"
                                                                         onClick={() =>
                                                                             setHoveredSubMenu((prev) =>
                                                                                 prev === "AWS" ? null : "AWS"
                                                                             )
                                                                         }
                                                                     >
-                                                                        AWS Cloud Services
+                                                                        AWS Cloud Services {hoveredSubMenu === "AWS" ? <MdArrowDropDown size={25}/> : <MdArrowDropDown className="rotate-180" size={25}/>}
                                                                     </button>
                                                                     {hoveredSubMenu === "AWS" && (
                                                                         <ul className="pl-4 mt-2">
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    AWS Deployment & Management
+                                                                                    AWS Deployment & Management  <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    AWS Security
+                                                                                    AWS Security  <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    AWS Cost Optimization
+                                                                                    AWS Cost Optimization  <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                             <li>
                                                                                 <Link
                                                                                     to={"/services/aws-service"}
-                                                                                    className="block py-1 text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
+                                                                                    className="text-black hover:text-blue-500 transition-colors w-full text-left border-b !border-gray-400 py-2 flex items-center justify-between text-[1.1rem]"
                                                                                     onClick={() => setSideBar(false)}
                                                                                 >
-                                                                                    AWS Managed Services
+                                                                                    AWS Managed Services  <IoMdArrowRoundForward/>
                                                                                 </Link>
                                                                             </li>
                                                                         </ul>
@@ -450,7 +452,7 @@ const Header = () => {
                                                         className="text-black hover:text-blue-500 transition-colors !border-gray-400 py-2 flex items-center justify-between text-[1.6rem]"
                                                         onClick={() => setSideBar(false)} // Close sidebar on link click
                                                     >
-                                                        {item.title}
+                                                        {item.title} <IoMdArrowRoundForward/>
                                                     </Link>
                                                 )}
                                             </li>
